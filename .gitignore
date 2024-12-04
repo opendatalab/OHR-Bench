@@ -7,10 +7,4 @@ tmp/
 bash
 tmp*
 real_config*
-merged.json
 *.sh
-milvus_data/
-data/
-my_data/
-batchscript*
-phoenix-slurm*
