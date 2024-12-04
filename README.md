@@ -2,6 +2,8 @@
     OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation
 </h1>
 
+[Dataset (🤗Hugging Face)](https://huggingface.co/datasets/opendatalab/OHR-Bench) | [Dataset (OpenDataLab)]()
+
 This repository contains the official code of **OHR-Bench**, a benchmark designed to evaluate the cascading impact of OCR on RAG.
 
 # Overview
@@ -10,6 +12,15 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
 - **Evaluation framework: [[Github opendatalab/OHR-Bench](https://github.com/opendatalab/OHR-Bench)]**. We provide a RAG evaluation framework to assess the impact of OCR processed structured data and our perturbed data on RAG including retrieval, generation and overall performance.
 
 ![framework](./figs/framework.png)
+
+## Evaluation Results
+![img.png](./figs/results.png)
+
+We evaluate the suitability of current OCR solutions for real-world RAG applications by conducting comprehensive experiments with our OHR-Bench.
+We derive conclusions as follows:
+
+- Pipeline-based OCR demonstrates the best performance. Employing Marker achieves the best retrieval performance across all OCR solutions, while MinerU dominates the generation and overall evaluation.
+- All OCR solutions suffer performance degradation. Even the best solutions show a decrease of 1.9 in EM@1 and 2.93 F1@1 in the overall evaluation, with greater losses in the retrieval and generation stages.
 
 # Getting Started
 ## Installation
@@ -20,6 +31,10 @@ pip install -r requirements.txt
 ## Dataset preparation
 ### Generation and end-to-end evaluation
 Place the Q&A JSON files in the data/qa directory. Each JSON file should be structured as follows:
+
+<details>
+<summary>Q&A JSON</summary>
+
 ```json
 [
     {
@@ -39,6 +54,9 @@ Place the Q&A JSON files in the data/qa directory. Each JSON file should be stru
     ...
 ]
 ```
+
+</details>
+
 Refer to the example in `data/qa/gt` for more details.
 ### Retrieval
 Place the parsed structured data in the `data/retrieval_base` directory. Refer to the example in `data/retrieval_base/gt` for more details.
@@ -63,9 +81,20 @@ bash shell/retrieval.sh gt finance qwen2_7b
 bash shell/end2end.sh gt finance qwen2_7b
 ```
 
+# Overall Results
+
 # Acknowledgement
 The evaluation framework is based on [CRUD](https://github.com/IAAR-Shanghai/CRUD_RAG), thanks so much for this brilliant project.
 
-# CITATION
+# Citation
 ```
+@article{zhang2024ocr,
+  title={OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation},
+  author={Junyuan Zhang and Qintong Zhang and Bin Wang and Linke Ouyang and Zichen Wen and Ying Li and Ka-Ho Chow and Conghui He and Wentao Zhang},
+  journal={arXiv preprint arXiv:2412.02592},
+  year={2024}
+}
 ```
+
+# Copyright Statement
+The PDFs are collected from public online channels and community user contributions. Content that is not allowed for distribution has been removed. The dataset is for research purposes only and not for commercial use. If there are any copyright concerns, please contact OpenDataLab@pjlab.org.cn.
