@@ -81,8 +81,6 @@ bash shell/retrieval.sh gt finance qwen2_7b
 bash shell/end2end.sh gt finance qwen2_7b
 ```
 
-# Overall Results
-
 # Acknowledgement
 The evaluation framework is based on [CRUD](https://github.com/IAAR-Shanghai/CRUD_RAG), thanks so much for this brilliant project.
 
