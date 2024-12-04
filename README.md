@@ -2,7 +2,11 @@
     OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation
 </h1>
 
-[Dataset (🤗Hugging Face)](https://huggingface.co/datasets/opendatalab/OHR-Bench) | [Dataset (OpenDataLab)]()
+<div align="center">
+
+[\[📜 arXiv\]](https://arxiv.org/abs/2412.02592v1) | [\[Dataset (🤗Hugging Face)\]](https://huggingface.co/datasets/opendatalab/OHR-Bench) | [\[Dataset (OpenDataLab)\]]()
+
+</div>
 
 This repository contains the official code of **OHR-Bench**, a benchmark designed to evaluate the cascading impact of OCR on RAG.
 
