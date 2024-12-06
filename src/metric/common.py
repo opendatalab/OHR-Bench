@@ -24,7 +24,7 @@ def catch_all_exceptions(func):
             if func.__name__ == "bleu_score":
                 return 0, 0, 0, 0, 0
             else:
-                return 0
+                return -1
     return wrapper
 
 

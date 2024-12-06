@@ -1,0 +1,14 @@
+[
+    {
+        "doc_name": "finance/JPMORGAN_2021Q1_10Q",
+        "ID": "00073cc2-c801-467c-9039-fca63c78c6a9",
+        "questions": "What was the total amount of nonaccrual loans retained as of March 31, 2021?",
+        "answers": "842",
+        "doc_type": "finance",
+        "answer_form": "Numeric",
+        "evidence_source": "table",
+        "evidence_context": "Nonaccrual loans retained $^{(\\mathrm{a})}$ & \\$ & 842 & \\$ & 689 & $22 \\%$",
+        "evidence_page_no": 24,
+        "is_extra_qa": false
+    }
+]

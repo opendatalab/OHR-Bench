@@ -20,8 +20,7 @@ class RetrievalTask(BaseTask):
         self.retriever = retriever
     
     def retrieve_docs(self, obj:dict) -> str:
-        query_text = obj["questions"]
-        retrieval_results = self.retriever.search_docs(query_text)
+        retrieval_results = self.retriever.search_docs(obj)
         return retrieval_results
 
     def scoring(self, data_point: dict) -> dict:
@@ -30,6 +29,8 @@ class RetrievalTask(BaseTask):
         page_idx = data_point["evidence_page_no"]
         ret_context = [r["text"] for r in data_point["retrieval_results"] if r["file_name"] == doc_name and r["page_idx"] == page_idx]
         gt_context = data_point["evidence_context"]
+        if isinstance(gt_context, list):
+            gt_context = "\n".join(gt_context)
         if len(ret_context) > 0:
             lcs = lcs_score("\n\n".join(ret_context), gt_context)
         else:
@@ -41,7 +42,7 @@ class RetrievalTask(BaseTask):
             },
             'log': {
                 'quest': data_point["questions"],
-                'retrieval_context': ret_context,
+                'retrieval_context': data_point["retrieval_results"],
                 'ground_truth_context': gt_context,
                 'evidence_source': data_point["evidence_source"],
                 'evaluateDatetime': str(datetime.datetime.now()),

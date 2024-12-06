@@ -33,8 +33,40 @@ pip install -r requirements.txt
 ```
 
 ## Dataset preparation
-### Generation and end-to-end evaluation
-Place the Q&A JSON files in the data/qa directory. Each JSON file should be structured as follows:
+### OCR processed structured data
+To evaluate your OCR results using this benchmark, place the parsed structured data (PDFs can be found at [Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)) in the `data/retrieval_base` directory. Use the ground truth (gt) data as an example. The sub-folder names indicate the domain of the parsed results, and each JSON file, named as the same of corresponding PDF files, should contain the corresponding parsed results.
+
+<details>
+<summary>Directory Structure</summary>
+
+```bash
+retrieval_base/gt/ # We provide gt and MinerU processed structured data as illustration here
+├── finance # Domain
+│   ├── 3M_2023Q2_10Q.json # Parsed results
+│   ├── ...
+├── textbook
+...
+```
+
+</details>
+
+<details>
+<summary>OCR Processed Data</summary>
+
+```json
+[
+    {
+        "page_idx": "finance/JPMORGAN_2021Q1_10Q", // Page index
+        "text": "...", // OCR processed structured data
+    },
+    ...
+]
+```
+
+</details>
+
+### QA data
+The qa data is placed in `data/qas.json`. Each JSON file should be structured as follows:
 
 <details>
 <summary>Q&A JSON</summary>
@@ -46,10 +78,7 @@ Place the Q&A JSON files in the data/qa directory. Each JSON file should be stru
         "ID": "00073cc2-c801-467c-9039-fca63c78c6a9", // Unique ID
         "questions": "What was the total amount of nonaccrual loans retained as of March 31, 2021?",
         "answers": "842",
-        // Th relevant context used to answer the question. In generation evaluation, it is the parsed results of the PDF page that questions derived from. In end-to-end evaluation, it is the retrieved results.
-        "context": "Selected metrics\n...",
-        "doc_type": "finance", // PDF domain.
-        "difficulty_level": "Easy",
+        "doc_type": "finance", // Q&A domain.
         "answer_form": "Numeric", // Answer format.
         "evidence_source": "table", // Evidence source.
         "evidence_context": "Nonaccrual loans retained $^{(\\mathrm{a})}$ & \\$ & 842 & \\$ & 689 & $22 \\%$", // Evidence.
@@ -61,28 +90,20 @@ Place the Q&A JSON files in the data/qa directory. Each JSON file should be stru
 
 </details>
 
-Refer to the example in `data/qa/gt` for more details.
-### Retrieval
-Place the parsed structured data in the `data/retrieval_base` directory. Refer to the example in `data/retrieval_base/gt` for more details.
-```bash
-# Directory structure
-retrieval_base/gt/ # gt or OCR parsed results
-├── finance # domain
-│   ├── 3M_2023Q2_10Q.json # parsed results
-│   ├── ...
-├── textbook
-...
-```
 
 # Run Evaluation
+To evaluate your OCR results, follow the instructions in the Dataset Preparation section to organize your OCR data.
+
 ```bash
+# The first argument specifies which OCR results to use for evaluation.
+# The second argument specifies the retrievers or LLMs.
+
 # Generation
-bash shell/generation.sh gt finance qwen2_7b
+bash shell/generation.sh gt qwen2_7b
 # Retrieval
-bash shell/retrieval.sh gt finance qwen2_7b
+bash shell/retrieval.sh gt qwen2_7b
 # End-to-end
-# Run the corresponding retrieval before end-to-end evaluation
-bash shell/end2end.sh gt finance qwen2_7b
+bash shell/end2end.sh gt qwen2_7b
 ```
 
 # Acknowledgement

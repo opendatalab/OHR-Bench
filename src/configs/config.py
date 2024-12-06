@@ -8,7 +8,7 @@ GPT_transit_url = ''
 GPT_transit_token = ''
 GPT_transit_user = ''
 
-Qwen2_7B_local_path = ''
+Qwen2_7B_local_path = '/mnt/hwfile/opencompass/checkpoints/llm/hf_hub/models--Qwen--Qwen2-7B-Instruct/snapshots/f2826a00ceef68f0f2b946d945ecc0477ce4450c'
 Qwen25_7B_local_path = ''
 Embedding_local_path = ''
 LLaMA31_8B_Instruct = ''

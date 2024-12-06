@@ -27,7 +27,11 @@ class QuestAnswer(BaseTask):
     
     def retrieve_docs(self, obj:dict) -> str:
         query_text = obj["questions"]
-        retrieve_context = self.retriever.search_docs(query_text)
+        retrieve_results = self.retriever.search_docs(obj)
+        retrieve_context = "\n\n".join([
+            r["text"].split('\nGiven the context information')[0]
+            for r in retrieve_results
+        ])
         retrieve_context = retrieve_context.split('\nGiven the context information')[0]
         return retrieve_context
 
@@ -124,7 +128,6 @@ class QuestAnswer(BaseTask):
         return overall_save
 
 
-
 class QuestAnswer_image(QuestAnswer):
     def __init__(self, output_dir: str = './output'):
         super().__init__(output_dir)
@@ -162,7 +165,6 @@ class QuestAnswer_image(QuestAnswer):
             if special_match:
                 real_res = special_match.group(1).strip()
         return real_res.strip()
-
 
 
 class QuestAnswer_OCR(QuestAnswer):
@@ -233,3 +235,5 @@ class QuestAnswer_image_OCR(QuestAnswer):
             if special_match:
                 real_res = special_match.group(1).strip()
         return real_res.strip()
+
+

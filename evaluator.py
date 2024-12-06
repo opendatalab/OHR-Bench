@@ -202,7 +202,7 @@ class StageEvaluator(BaseEvaluator):
         if not (os.path.exists(output_dir) and os.path.isdir(output_dir)):
             os.makedirs(output_dir)
         self.output_dir = os.path.dirname(output_dir)
-        if self.stage == "generation":
+        if self.stage == "generation" or self.stage == "end2end":
             self.output_path = os.path.join(
                 output_dir, f'{output_name}_{model.params["model_name"]}.json'
             )
@@ -214,6 +214,16 @@ class StageEvaluator(BaseEvaluator):
             self.output_path = os.path.join(
                 output_dir, f'{output_name}_{ret}_top{self.retriever.similarity_top_k}.json'
             )
+        elif self.stage == "end2end":
+            ret = {
+                "CustomBM25Retriever": "bm25",
+                "CustomBGEM3Retriever": "bge-m3"
+            }[self.retriever.__class__.__name__]
+            self.output_path = os.path.join(
+                output_dir, f'{output_name}_{ret}_top{self.retriever.similarity_top_k}_{model.params["model_name"]}.json'
+            )
+        else:
+            raise NotImplementedError()
         self.task.set_model(self.model, self.retriever)
 
     def multithread_batch_retrieval(self, dataset: list[dict], sort=True, show_progress_bar=False, contain_original_data=False) -> list[dict]:
@@ -251,54 +261,9 @@ class StageEvaluator(BaseEvaluator):
                 import traceback
                 traceback.print_exc()
                 logger.warning(repr(e))
-                return None
-
-        with concurrent.futures.ThreadPoolExecutor(max_workers=self.num_threads) as executor:
-            future_results = list(tqdm(executor.map(process_data_point, dataset), total=len(dataset)))
-        
-        results.extend([result for result in future_results if result is not None])
-        
-        return sorted(results, key=lambda x: x['id']) if sort else results
-
-    def multithread_batch_scoring(self, dataset: list[dict], sort=True, show_progress_bar=False, contain_original_data=False) -> list[dict]:
-        """Perform batch scoring on the given dataset.
-
-        Args:
-            dataset (list[dict]): The dataset for evaluation.
-            sort (bool): Whether to sort the results by id.
-            show_progress_bar (bool): Whether to display a progress bar.
-
-        Returns:
-            list[dict]: List of results.
-        """
-
-        if os.path.exists(self.output_path):  # Resume evaluation
-            results = self.read_output().get('results', [])
-            results = self.remove_invalid(results)
-            saved_ids = [result['id'] for result in results]
-        else:
-            results = []
-            saved_ids = []
-
-        def process_data_point(data_point):
-            if data_point['ID'] in saved_ids:
-                return None  # Skip results that have already been evaluated and are valid
-            try:
-                generated_text = self.task.model_generation(data_point)
-                # TODO fix bugs
-                if generated_text == '","msg":"request openai failed"':
-                    return None
-                
-                data_point["generated_text"] = generated_text
+                self.lock.release()
+                data_point["retrieval_results"] = []
                 result = {'id': data_point['ID'], **self.task.scoring(data_point)}
-
-                if contain_original_data:
-                    result['original_data'] = data_point
-
-                return result
-            
-            except Exception as e:
-                logger.warning(repr(e))
                 return None
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=self.num_threads) as executor:
@@ -322,26 +287,24 @@ class StageEvaluator(BaseEvaluator):
                 logger.warning(repr(e))
                 overall = dict()
             # TODO: FIX the path
-            output_context_path = self.output_path.replace("./output/retrieval", "./data/qa_retrieval")
-            os.makedirs(os.path.dirname(output_context_path), exist_ok=True)
-            with open(output_context_path, "w") as f:
-                lines = []
-                for data in self.dataset:
-                    line = {k:v for k,v in data.items() if k not in ["retrieval_results", "context"]}
-                    # line["context"] = "\n".join([r["text"] for r in id2retrieval_text[data["ID"]]])
-                    line["context"] = "\n".join([r["text"] for r in data["retrieval_results"]])
-                    lines.append(line)
-                json.dump(lines, f, indent=2)
-                print(f'Retrieved context saved at {output_context_path}!')
+            # output_context_path = self.output_path.replace("./output/retrieval", "./data/qa_retrieval")
+            # os.makedirs(os.path.dirname(output_context_path), exist_ok=True)
+            # with open(output_context_path, "w") as f:
+            #     lines = []
+            #     for data in self.dataset:
+            #         line = {k:v for k,v in data.items() if k not in ["retrieval_results", "context"]}
+            #         # line["context"] = "\n".join([r["text"] for r in id2retrieval_text[data["ID"]]])
+            #         line["context"] = "\n".join([r["text"] for r in data["retrieval_results"]])
+            #         lines.append(line)
+            #     json.dump(lines, f, indent=2)
+            #     print(f'Retrieved context saved at {output_context_path}!')
             self.save_output(output:={'info': info, 'overall': overall, 'results': results})
             print(f'Output saved at {self.output_path}!')
-        elif self.stage == 'generation':
+        elif self.stage == 'generation' or self.stage == 'end2end':
             info = {
                 'task': self.task.__class__.__name__, 
                 'llm': str(self.model.params),
             }
-            for i in range(len(self.dataset)):
-                self.dataset[i]['retrieve_context'] = self.dataset[i]['context']
             results = self.multithread_batch_scoring(self.dataset, sort, show_progress_bar, contain_original_data)
             valid_results = self.remove_invalid(results)
             try:
