@@ -91,6 +91,15 @@ The qa data is placed in `data/qas.json`. Each JSON file should be structured as
 </details>
 
 
+## LLMs preparation
+In `src/configs`, configure your local LLM path or GPT API.
+```python
+GPT_api_key = 'You KEY Here'  # openai.api_key
+...
+Qwen2_7B_local_path = 'Qwen/Qwen2-7B-Instruct' # download from Hugging Face or your local path
+```
+
+
 # Run Evaluation
 To evaluate your OCR results, follow the instructions in the Dataset Preparation section to organize your OCR data.
 
