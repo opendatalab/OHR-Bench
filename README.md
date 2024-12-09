@@ -11,9 +11,9 @@
 This repository contains the official code of **OHR-Bench**, a benchmark designed to evaluate the cascading impact of OCR on RAG.
 
 # Overview
-- **PDF, gt structured data and Q&A datasets: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `data/pdfs`, `data/ground_truth_structured_data` and `data/qas`**. It includes 4000+ unstructured PDF pages from various domains, including Textbook, Law, Finance, Newspaper, Manual and Academia and Q&A datasets sourced from multimodal document elements. Each PDF page is equipped with a human-verified ground truth structured data.
-- **Perturbed data with OCR errors: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `data/perturbed_structured_data`**. In order to conduct in-depth analysis of the OCR's impact on RAG, OHR-Bench identifies *Semantic Noise* and *Formatting Noise* and introduce them with mild, moderate and severe perturbation based on real-world OCR errors.
-- **Evaluation framework: [[Github opendatalab/OHR-Bench](https://github.com/opendatalab/OHR-Bench)]**. We provide a RAG evaluation framework to assess the impact of OCR processed structured data and our perturbed data on RAG including retrieval, generation and overall performance.
+- **PDF, gt structured data and Q&A datasets: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `pdfs`, `gt_and_qas`**. It includes 4000+ unstructured PDF pages from various domains, including Textbook, Law, Finance, Newspaper, Manual and Academia and Q&A datasets sourced from multimodal document elements. Each PDF page is equipped with a human-verified ground truth structured data.
+- **Perturbed data with OCR errors: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `retrieval_base/formatting_noise_[mild/moderate/severe]` and `retrieval_base/semantic_noise_[mild/moderate/severe]`**. In order to conduct in-depth analysis of the OCR's impact on RAG, OHR-Bench identifies *Semantic Noise* and *Formatting Noise* and introduce them with mild, moderate and severe perturbation based on real-world OCR errors.
+- **Evaluation framework: [[Github opendatalab/OHR-Bench](GitHub - opendatalab/OHR-Bench: OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval)]**. We provide a RAG evaluation framework to assess the impact of OCR processed structured data and our perturbed data on RAG including retrieval, generation and overall performance.
 
 ![framework](./figs/framework.png)
 
@@ -34,7 +34,14 @@ pip install -r requirements.txt
 
 ## Dataset preparation
 ### OCR processed structured data
-To evaluate your OCR results using this benchmark, place the parsed structured data (PDFs can be found at [Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)) in the `data/retrieval_base` directory. Use the ground truth (gt) data as an example. The sub-folder names indicate the domain of the parsed results, and each JSON file, named as the same of corresponding PDF files, should contain the corresponding parsed results.
+To evaluate your RAG system on our benchmark, follow these steps:
+1. **Download Perturbed Data**: Get the data with formatting and semantic noise from [Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench).
+2. **Organize the Data**: Place the folders `retrieval_base/formatting_noise_[mild/moderate/severe]` and `retrieval_base/semantic_noise_[mild/moderate/severe]` in the `data/retrieval_base` directory of this project.
+3. **Run Evaluation**: Follow the instructions in [**Run Evaluation**](#run-evaluation).
+
+To evaluate your OCR results using this benchmark:
+1. **Organize the Data**: Do OCR with your OCR models (PDFs available on [Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)) and place the OCR processed structured data in the `data/retrieval_base` directory. Use the ground truth (`data/retrieval_base/gt`) data as an example. The sub-folder names indicate the domain of the parsed results, and each JSON file, named as the same of corresponding PDF files, should contain the corresponding parsed results.
+2. **Run Evaluation**: Follow the instructions in [**Run Evaluation**](#run-evaluation).
 
 <details>
 <summary>Directory Structure</summary>
@@ -107,16 +114,24 @@ To evaluate your OCR results, follow the instructions in the Dataset Preparation
 # The first argument specifies which OCR results to use for evaluation.
 # The second argument specifies the retrievers or LLMs.
 
-# Generation
+# Generation with gt
 bash shell/generation.sh gt qwen2_7b
-# Retrieval
+# Generation with mild semantic noise
+bash shell/generation.sh semantic_noise_mild qwen2_7b
+
+# Retrieval with gt
 bash shell/retrieval.sh gt qwen2_7b
-# End-to-end
+# Retrieval with mild semantic noise
+bash shell/retrieval.sh semantic_noise_mild qwen2_7b
+
+# End-to-end with gt
 bash shell/end2end.sh gt qwen2_7b
+# End-to-end with mild semantic noise
+bash shell/end2end.sh semantic_noise_mild qwen2_7b
 ```
 
 # Acknowledgement
-The evaluation framework is based on [CRUD](https://github.com/IAAR-Shanghai/CRUD_RAG), thanks so much for this brilliant project.
+The evaluation framework is based on [CRUD](GitHub - IAAR-Shanghai/CRUD_RAG: CRUD-RAG: A Comprehensive Chinese Benchmark for Retrieval-Augmented), thanks so much for this brilliant project.
 
 # Citation
 ```
