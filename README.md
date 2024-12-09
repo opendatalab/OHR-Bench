@@ -63,7 +63,7 @@ retrieval_base/gt/ # We provide gt and MinerU processed structured data as illus
 ```json
 [
     {
-        "page_idx": "finance/JPMORGAN_2021Q1_10Q", // Page index
+        "page_idx": 0, // Page index
         "text": "...", // OCR processed structured data
     },
     ...
