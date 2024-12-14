@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ## Dataset preparation
 ### OCR processed structured data
 To evaluate your RAG system on our benchmark, follow these steps:
-1. **Download Perturbed Data**: Get the data with formatting and semantic noise from [Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench).
+1. **Download Perturbed Data**: Get the data with formatting and semantic noise from [the zip file in Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench/blob/main/retrieval.zip) and unzip it.
 2. **Organize the Data**: Place the folders `retrieval_base/formatting_noise_[mild/moderate/severe]` and `retrieval_base/semantic_noise_[mild/moderate/severe]` in the `data/retrieval_base` directory of this project.
 3. **Run Evaluation**: Follow the instructions in [**Run Evaluation**](#run-evaluation).
 
@@ -131,7 +131,7 @@ bash shell/end2end.sh semantic_noise_mild qwen2_7b
 ```
 
 # Acknowledgement
-The evaluation framework is based on [CRUD](GitHub - IAAR-Shanghai/CRUD_RAG: CRUD-RAG: A Comprehensive Chinese Benchmark for Retrieval-Augmented), thanks so much for this brilliant project.
+The evaluation framework is based on [CRUD](https://github.com/IAAR-Shanghai/CRUD_RAG), thanks so much for this brilliant project.
 
 # Citation
 ```
