@@ -18,7 +18,111 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
 ![framework](./figs/framework.png)
 
 ## Evaluation Results
-![img.png](./figs/results.png)
+<!-- ![img.png](./figs/results.png) -->
+<table>
+    <tr>
+        <td></td>
+        <td align="center">OCR</td>
+        <td colspan="2" align="center">Retrieval</td>
+        <td colspan="2" align="center">Generation</td>
+        <td colspan="2" align="center">Overall</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Edit Distance ↓</td>
+        <td>LCS@1 ↑</td>
+        <td>LCS@5 ↑</td>
+        <td>EM ↑</td>
+        <td>F1 ↑</td>
+        <td>EM@1 ↑</td>
+        <td>F1@1 ↑</td>
+    </tr>
+    <tr>
+        <td>Ground Truth</td>
+        <td>-</td>
+        <td>63.53</td>
+        <td>86.22</td>
+        <td>33.54</td>
+        <td>50.19</td>
+        <td>26.42</td>
+        <td>39.77</td>
+    </tr>
+    <tr>
+    <td colspan="8"><em>Pipeline-based OCR</em></td>
+    </tr>
+    <tr>
+        <td>MinerU</td>
+        <td>0.2328</td>
+        <td>52.53</td>
+        <td><u>73.61</u></td>
+        <td><b>30.50</b></td>
+        <td><b>46.08</b></td>
+        <td><b>24.52</b></td>
+        <td><b>36.84</b></td>
+    </tr>
+    <tr>
+        <td>Marker</td>
+        <td>0.2621</td>
+        <td><b>56.94</b></td>
+        <td><b>78.53</b></td>
+        <td><u>30.08</u></td>
+        <td><u>46.02</u></td>
+        <td><u>23.89</u></td>
+        <td><u>36.51</u></td>
+    </tr>
+    <tr>
+        <td>DeepDoc</td>
+        <td>0.2839</td>
+        <td>48.37</td>
+        <td>68.94</td>
+        <td>28.93</td>
+        <td>44.12</td>
+        <td>22.72</td>
+        <td>34.55</td>
+    </tr>
+    <td colspan="8"><em>End-to-end OCR</em></td>
+    <tr>
+        <td>GOT</td>
+        <td>0.2884</td>
+        <td>45.80</td>
+        <td>67.06</td>
+        <td>26.36</td>
+        <td>40.62</td>
+        <td>21.51</td>
+        <td>32.69</td>
+    </tr>
+    <tr>
+        <td>Nougat</td>
+        <td>0.3303</td>
+        <td>44.77</td>
+        <td>61.46</td>
+        <td>24.81</td>
+        <td>37.94</td>
+        <td>20.40</td>
+        <td>30.89</td>
+    </tr>
+    <td colspan="8"><em>Vision-Language Model for OCR</em></td>
+    <tr>
+        <td>Qwen2-VL-72B</td>
+        <td>0.2564</td>
+        <td><u>53.16</u></td>
+        <td>72.97</td>
+        <td>26.72</td>
+        <td>41.23</td>
+        <td>23.45</td>
+        <td>35.91</td>
+    </tr>
+    <tr>
+        <td>InternVL2-Llama3-76B</td>
+        <td>0.4450</td>
+        <td>42.43</td>
+        <td>57.51</td>
+        <td>20.74</td>
+        <td>32.89</td>
+        <td>20.58</td>
+        <td>31.23</td>
+    </tr>
+</table>
 
 We evaluate the suitability of current OCR solutions for real-world RAG applications by conducting comprehensive experiments with our OHR-Bench.
 We derive conclusions as follows:
