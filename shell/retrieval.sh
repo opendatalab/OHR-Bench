@@ -7,7 +7,7 @@ python quick_start.py \
   --model_name 'mock' \
   --retriever ${RET_TYPE}  \
   --data_path data/qas.json \
-  --docs_path data/retrieval_base/gt \
+  --docs_path data/retrieval_base/${OCR_TYPE} \
   --ocr_type ${OCR_TYPE} \
   --task 'Retrieval' \
   --evaluation_stage 'retrieval' \

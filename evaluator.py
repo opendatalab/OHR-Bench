@@ -202,7 +202,7 @@ class StageEvaluator(BaseEvaluator):
         if not (os.path.exists(output_dir) and os.path.isdir(output_dir)):
             os.makedirs(output_dir)
         self.output_dir = os.path.dirname(output_dir)
-        if self.stage == "generation" or self.stage == "end2end":
+        if self.stage == "generation":
             self.output_path = os.path.join(
                 output_dir, f'{output_name}_{model.params["model_name"]}.json'
             )

@@ -1,8 +1,8 @@
 #!usr/env/bin bash
 
 OCR_TYPE=$1
-LLM_TYPE=$2
-RET_TYPE=$3
+RET_TYPE=$2
+LLM_TYPE=$3
 
 python quick_start.py \
   --model_name ${LLM_TYPE} \
@@ -11,7 +11,7 @@ python quick_start.py \
   --retriever ${RET_TYPE} \
   --retrieve_top_k 1 \
   --data_path data/qas.json \
-  --docs_path data/retrieval_base/gt \
+  --docs_path data/retrieval_base/${OCR_TYPE} \
   --ocr_type ${OCR_TYPE} \
   --task 'QA' \
   --evaluation_stage 'end2end' \

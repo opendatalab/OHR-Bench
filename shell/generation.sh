@@ -9,7 +9,7 @@ python quick_start.py \
   --max_new_tokens 1280 \
   --retriever 'page' \
   --data_path data/qas.json \
-  --docs_path data/retrieval_base/gt \
+  --docs_path data/retrieval_base/${OCR_TYPE} \
   --ocr_type ${OCR_TYPE} \
   --task 'QA' \
   --evaluation_stage 'generation' \
