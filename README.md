@@ -114,20 +114,23 @@ To evaluate your OCR results, follow the instructions in the Dataset Preparation
 # The first argument specifies which OCR results to use for evaluation.
 # The second argument specifies the retrievers or LLMs.
 
+# Args: Document source, LLM
 # Generation with gt
 bash shell/generation.sh gt qwen2_7b
 # Generation with mild semantic noise
 bash shell/generation.sh semantic_noise_mild qwen2_7b
 
+# Args: Document source, retriver
 # Retrieval with gt
-bash shell/retrieval.sh gt qwen2_7b
+bash shell/retrieval.sh gt bge-m3
 # Retrieval with mild semantic noise
-bash shell/retrieval.sh semantic_noise_mild qwen2_7b
+bash shell/retrieval.sh semantic_noise_mild bge-m3
 
+# Args: Document source, retriver, LLM
 # End-to-end with gt
-bash shell/end2end.sh gt qwen2_7b
+bash shell/end2end.sh gt bge-m3 qwen2_7b
 # End-to-end with mild semantic noise
-bash shell/end2end.sh semantic_noise_mild qwen2_7b
+bash shell/end2end.sh semantic_noise_mild bge-m3 qwen2_7b
 ```
 
 # Acknowledgement
