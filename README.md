@@ -13,9 +13,15 @@
 This repository contains the official code of **OHR-Bench**, a benchmark designed to evaluate the cascading impact of OCR on RAG.
 
 # Overview
+<<<<<<< HEAD
 - **PDF, gt structured data and Q&A datasets: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `pdfs.zip`, `data/retrieval_base/gt`, `data/qas_v2.json`**. It includes 8500+ unstructured PDF pages from 7 domains, including Textbook, Law, Finance, Newspaper, Manual, Academic and Administration and 8498 Q&A datasets sourced from 5 key components for OCR in document parsing, including plain text, table, formula, chart and reading order. Each PDF page is equipped with a human-verified ground truth structured data.
 - **Perturbed data with OCR errors: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `formatting_noise_[mild/moderate/severe]` and `semantic_noise_[GOT/MinerU/Qwen2.5-VL-72B]_[mild/moderate/severe]`**. In order to conduct in-depth analysis of the OCR's impact on RAG, OHR-Bench identifies *Semantic Noise* and *Formatting Noise* and introduce them with mild, moderate and severe perturbation based on real-world OCR errors.
 - **Evaluation framework: [[Github opendatalab/OHR-Bench](GitHub - opendatalab/OHR-Bench: OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval)]**. We provide a RAG evaluation framework to assess the impact of OCR processed structured data and our perturbed data on RAG including retrieval, generation and overall performance.
+=======
+- **PDF, gt structured data and Q&A datasets: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `pdfs`, `gt_and_qas`**. It includes 4000+ unstructured PDF pages from various domains, including Textbook, Law, Finance, Newspaper, Manual and Academia and Q&A datasets sourced from multimodal document elements. Each PDF page is equipped with a human-verified ground truth structured data.
+- **Perturbed data with OCR errors: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `retrieval_base/formatting_noise_[mild/moderate/severe]` and `retrieval_base/semantic_noise_[mild/moderate/severe]`**. In order to conduct in-depth analysis of the OCR's impact on RAG, OHR-Bench identifies *Semantic Noise* and *Formatting Noise* and introduce them with mild, moderate and severe perturbation based on real-world OCR errors.
+- **Evaluation framework: [[Github opendatalab/OHR-Bench](https://github.com/opendatalab/OHR-Bench)]**. We provide a RAG evaluation framework to assess the impact of OCR processed structured data and our perturbed data on RAG including retrieval, generation and overall performance.
+>>>>>>> 76443f30cfacb1b573c7401613ceb6986e3d809c
 
 
 ## Evaluation Results
