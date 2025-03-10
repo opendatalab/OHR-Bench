@@ -8,17 +8,17 @@
 
 </div>
 
+![framework](./figs/framework.png)
+
 This repository contains the official code of **OHR-Bench**, a benchmark designed to evaluate the cascading impact of OCR on RAG.
 
 # Overview
-- **PDF, gt structured data and Q&A datasets: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `pdfs.zip`, `data/retrieval_base/gt`**. It includes 8500+ unstructured PDF pages from various domains, including Textbook, Law, Finance, Newspaper, Manual, Academic and Administration and 8498 Q&A datasets sourced from multimodal document elements. Each PDF page is equipped with a human-verified ground truth structured data.
+- **PDF, gt structured data and Q&A datasets: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `pdfs.zip`, `data/retrieval_base/gt`, `data/qas_v2.json`**. It includes 8500+ unstructured PDF pages from 7 domains, including Textbook, Law, Finance, Newspaper, Manual, Academic and Administration and 8498 Q&A datasets sourced from 5 key components for OCR in document parsing, including plain text, table, formula, chart and reading order. Each PDF page is equipped with a human-verified ground truth structured data.
 - **Perturbed data with OCR errors: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `formatting_noise_[mild/moderate/severe]` and `semantic_noise_[GOT/MinerU/Qwen2.5-VL-72B]_[mild/moderate/severe]`**. In order to conduct in-depth analysis of the OCR's impact on RAG, OHR-Bench identifies *Semantic Noise* and *Formatting Noise* and introduce them with mild, moderate and severe perturbation based on real-world OCR errors.
 - **Evaluation framework: [[Github opendatalab/OHR-Bench](GitHub - opendatalab/OHR-Bench: OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval)]**. We provide a RAG evaluation framework to assess the impact of OCR processed structured data and our perturbed data on RAG including retrieval, generation and overall performance.
 
-![framework](./figs/framework.png)
 
 ## Evaluation Results
-<!-- ![img.png](./figs/results.png) -->
 <table>
     <thead>
         <tr>
@@ -233,7 +233,7 @@ pip install -r requirements.txt
 ## Dataset preparation
 ### OCR processed structured data
 To evaluate your RAG system on our benchmark, follow these steps:
-1. **Download Perturbed Data**: Get the data with formatting and semantic noise from [the zip file in Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench/blob/main/retrieval.zip) and unzip it.
+1. **Download Perturbed Data**: Get the data with formatting and semantic noise from [the zip file in Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench/blob/main/retrieval.zip) and unzip it. Or use the load_dataset ("opendatalab/OHR-Bench") to get the relevant fields.
 2. **Organize the Data**: Place the folders `retrieval_base/formatting_noise_[mild/moderate/severe]` and `retrieval_base/semantic_noise_[GOT/MinerU/Qwen2.5-VL-72B]_[mild/moderate/severe]` in the `data/retrieval_base` directory of this project.
 3. **Run Evaluation**: Follow the instructions in [**Run Evaluation**](#run-evaluation).
 
@@ -271,7 +271,7 @@ retrieval_base/gt/ # We provide gt and MinerU processed structured data as illus
 </details>
 
 ### QA data
-The qa data is placed in `data/qas.json`. Each JSON file should be structured as follows:
+The qa data is placed in `data/qas_v2.json`. Each JSON file should be structured as follows:
 
 <details>
 <summary>Q&A JSON</summary>
