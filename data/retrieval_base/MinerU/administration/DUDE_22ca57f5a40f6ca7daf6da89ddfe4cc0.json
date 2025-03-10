@@ -1,0 +1,42 @@
+[
+    {
+        "page_idx": 0,
+        "text": "# \n# \nProblem Solving and an Introduction to Programming Concepts Part 2:Systems Concepts and the Problem Space PreviousNext \n# \nWhenwe look at Systems, the questionmust be asked:What is thereabout all Systems,which basic componentscan befound in all Systems,thatcan be assigned to whatwecan describe as a Generic System?This GenericSystem Model containsthe ComponentsandParameterswhich can befound to existin allSystems.ThereareonlyThreepossibilities: \n1.Things-or what we will refer to as Nodes.They are physical entities which can be found at a specific Location in theRealWorld. \n2.Connections-or what we will refer to as Relationships. They are Abstract Concepts which may or may nothave a specificLocation in theReal World. \n3.Organization-or what we will refer to as Networks.They are both Abstract and Physical Concepts whichmayormaynothavea specificlocation in theReal Work \nfig.1-"
+    },
+    {
+        "page_idx": 1,
+        "text": "Generic System Model \nWhen weview the specificNodes and Relationships together (globally),we can see a representation of the Organization orNetwork.Whenever analyzing anyPhenomenaorProblemweshouldfirstattempttoisolate themost Fundamental Components or Parameters of the particular System(s) under investigation.Such a procedure enablesusto be sure thatwehavenot accidentally ignored something whichwould be important in ourAnalysis.Forexample,whengiven anassignmentto developa ComputerProgramfora certainGame, we should use thisMethodology toFirstestablish whattheProblemSpaceof thisSystem wouldbe.Iwill define theProblem Spaceas arepresentation of all of the fundamental Componentsor Parameterswhichcan be used to describe thePhenomena under investigation.TheProblemSpace in essentiallya Model of the Game System'sPhysical andAbstract Parameters,togetherwith specificrules governing the playing of the"
+    },
+    {
+        "page_idx": 2,
+        "text": "game. fig.2-"
+    },
+    {
+        "page_idx": 3,
+        "text": "#"
+    },
+    {
+        "page_idx": 4,
+        "text": "Note thatProblem Spaces are Nested according to their relationships to each otherin a Hierarchical fashion. Aswewill see when we discuss Programming concepts,Problem SpaceRules follow thosefound in OoA (Object Oriented Analysis) and used inOOP(ObjectOrientedProgramming)and inOoD(Object Oriented Design). \n2.1.0.-Systems Analysis and ScientificMethodology \nA special type of Thinking orAnalysiswasused to constructthepreviousModels;Sciencedealswith the study of such Physical Phenomena,and it is importantto understand ScientificMethodology if one is to successfully studySystems.Models are used by Scientists and others,in order to construct representations ofRealitywhich then allowustostudy thePhenomenaUnder investigation.TheScientificMethod encompassesfourbasicModelsofReality: \nfig 3-"
+    },
+    {
+        "page_idx": 5,
+        "text": ""
+    },
+    {
+        "page_idx": 6,
+        "text": ""
+    },
+    {
+        "page_idx": 7,
+        "text": "Notethat there has tobefeedbackbetween all levelsof thisModel,oftenonlyafterworkingonsubsequent modelswill onefind that a previousModel has to bemodified.The ideal situation is to create an association ofModelswhich allowfor the least overlap between Categories as ispossible,thereason for this should be Obvious \nSomeoftheproblemswhenconductingSystemsAnalysis,especiallywhen dealing withScientific Methodology,are the problems of Measurement andSpecification of the Model: \n1.Measurement-Uses quantitative methods to determine the quantities of each Component of the System.Itinvolves strictly,the use of Scientific qualities. \n2.Specification-Specifies the Parameters under which the System Operates. Specification uses both Qualitative and Quantitative Methods.It involves both Artistic and ScientificQualities \nfig.4-"
+    },
+    {
+        "page_idx": 8,
+        "text": "# \nThe investigator isalwaysinterested is System Resource Utilization,just as management of the Business Organization is interested in Resource Utilization within their Organization.Three Methods are used to describeResourceUtilization inaSystem: \nfig5- \nThe program designer always has to be aware of theResource Utilization Problem, since he doesnot have unlimited time andresources touse forhisproject."
+    },
+    {
+        "page_idx": 9,
+        "text": "# \nSeeCopyrightNotice For Comments and Questions contact the Webmaster: garthus@lilrc.org"
+    }
+]

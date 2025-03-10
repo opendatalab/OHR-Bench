@@ -1,0 +1,22 @@
+[
+    {
+        "text": "PROJEGTION DRAWING.\n\nPRINCIPLES OF PROJECTION.\n8. Projection Drawing is the science and art of producing drawings which shall represent completely all facts of position, form and magnitude of all geometrical quantities in space.\n9. The Methods employed in Projection Drawing, are those of \"Orthographic Projection,\" which is the basis of the science of Descriptive Geometry.\n\nFUNDAMENTAL IDEAS OF PROJECTION.\n10. In Projection Drawing, all objects are represented by their projections upon fixed planes of reference. Hence an understanding of the geometrical meaning of the term \"projection\" is essential.\n11. From Geometry we have: \"The projection of a point upon a straight line is the foot of the perpendicular dropped from the point upon the line.\"\n\nThus:\n\n\nFigure 1.",
+        "page_idx": 0
+    },
+    {
+        "text": "Let $A B$ be any straight line, and $P$ any point not in the line. Let $P \\neq$ be perpendicular to $A B$. Then $x$ is the projection of $P$ upon the line $A B$.\n12. Similarly: \"The projection of a point upon a plane is the foot of a perpendicular from the point to the plane.\n\nThus:\n\n\nFigure 2.\n$P$ is a point in space, and $P D$ a perpendicular from $P$ upon the plane $A B C D . \\quad \\phi$ is the projection, then, of $P$ upon the plane.\n13. The projection of any line, or surface, or solid, may be found by finding the projections of all of its points. For lines and surfaces are but successions of points, and solids are bounded by surfaces.\n\napplication of projection to drawing.\n14. Now consider two mathematical planes of indefinite extent, intersecting each other at right angles, fixed in position, one horizontal and the other vertical. Let the following figure represent limited portions of these two planes :",
+        "page_idx": 1
+    },
+    {
+        "text": "Figure 3.\nLet the vertical plane be denoted by $V$ and the horizontal plane by $H$, and their line of intersection by $G L$.\n15. Now imagine a point to be situated in space in one of the angles of these two planes, as shown in Fig. 4:\n\n\nFigure 4.",
+        "page_idx": 2
+    },
+    {
+        "text": "21. When the two planes have been made to coincide, they, with the projections of the point, may be brought into the plane of the paper, and will appear as shown in Fig. 5:\n\n\nThe line of intersection $G L$, is placed horizontal on the drawing, with the projections upon the vertical plane above, and those upon the horizontal plane below it.\n\nNOTATION.\n\nTERMS EMPLOYED.\n22. For convenience and brevity the following terms are used:\n(1) The two fixed planes are called \"the planes of projection,\" or \"the co-ordinate planes,\" or \"the planes of reference.\"\n(2) The vertical plane of projection is called simply \" the vertical plane,\" or commonly, \" V.\"\n(3) The other is called \"the horizontal plane,\" or simply, \" $H$.\"\n(4) The line of intersection of the two planes is called \" the ground line,\" or briefly, \" GL.\"",
+        "page_idx": 3
+    },
+    {
+        "text": "Pigure 6.\n99. A single projection is sufficient here. From it. Fig. 6, get the \"co-ordinates\" $O a$ and $a b$ of point $b$; and $O d$ and $d c$ of any point $C$ of the edge $F H$.\n\nConstruct the isometric drawing of the horizontal piece $O S$. Then along $O G$ on the drawing, lay off $O a$ from $O$, and from a downward lay off $a b$. This gives the lines $F b$ and $b R$, as $F$ and $R$ are on the isometric line and can be laid off at once.\n\nNext, to get the inclination of the other piece, lay off $O d$ from $O$ along $O G$, and upward lay off $d C$. Then there are two points determined and $F H$ can be drawn.\n$R K$ is parallel to $F H$ on the object, hence will be on the drawing.\n\nThe widths of the pieces are shown as usual. In this way the complete isometric drawing is readily constructed.\n100. By a similar use of co-ordinates obtained from the ordinary projections, the isometric drawing of anything may be constructed.\n\nSHADE LINES.\n101. Shade lines are placed in isometric drawings",
+        "page_idx": 4
+    }
+]

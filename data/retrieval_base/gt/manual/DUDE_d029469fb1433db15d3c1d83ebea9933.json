@@ -1,0 +1,82 @@
+[
+    {
+        "text": "NIST SRM 9983 \\\\ High-Rigidity Ball-Bar Stand\n\n\n\nUser Manual\n\n\n\nD. Sawyer \\\\ S.D. Phillips \\\\ G. Caskey \\\\ B. Borchardt \\\\ D. Ward \\\\ P. Snoots\n\nU.S. DEPARTMENT OF COMMERCE Technology Administration National Institute of Standards and Technology Gaithersburg, MD 20899\n\nQC\n\nN0. 5659",
+        "page_idx": 0
+    },
+    {
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "text": "NIST SRM 9983 \\\\ High-Rigidity Ball-Bar Stand\n\n\n\nUser Manual\n\n\n\nD. Sawyer \\\\ S.D. Phillips \\\\ G. Caskey \\\\ B. Borchardt \\\\ D. Ward \\\\ P. Snoots\n\nU.S. DEPARTMENT OF COMMERCE Technology Administration National Institute of Standards and Technology\nGaithersburg, MD 20899\nJune 1995\n\nU.S. DEPARTMENT OF COMMERCE\n\nRonald H. Brown, Secretary\nTECHNOLOGY ADMINISTRATION\nMary L. Good, Under Secretary for Technology\nNATIONAL INSTITUTE OF STANDARDS\nAND TECHNOLOGY\nArati Prabhakar, Director",
+        "page_idx": 2
+    },
+    {
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "text": "CONTENTS\nSECTION PAGE\nPREFACE ..... $-1$\nINTRODUCTION ..... $-2$\nASSEMBLY ..... -3\nHorizontal Orientation ..... -3\nInclined Orientation ..... -5\nVertical Orientation ..... $-6$\nATtaching the stand to the table ..... $-7$\nTROUBLESHOOTING ..... $-7$\nAPPENDIX ..... -8\nAPPENDIX A - Recommended ball positions for CMM performance evaluation ..... $-8$\nAPPENDIX B - Approximate height of ball bar stand components ..... 11",
+        "page_idx": 4
+    },
+    {
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "text": "PREFACE\n\nThis document is the user manual for the NIST SRM 9983 High Rigidity Ball Bar Stand. The manual contains a list of the components that are included as part of the unit. Complete instructions for setting up and assembling the stand to support a ball bar for Coordinate Measuring Machine (CMM) performance evaluation are also included.\n\nThis manual is divided into two sections. The Introduction provides a list of the components that should have arrived as part of the stand. Also included in this section is a brief description of the intended function and use of the stand. The Assembly section provides the necessary information for assembling and setting up the system to support a ball bar in all possible orientations. The user should read the entire manual before assembling the unit. This document contains important information and warnings that are printed in bold face.",
+        "page_idx": 6
+    },
+    {
+        "text": "INTRODUCTION\n\nAbOUT THE STAND\n\nNIST SRM 9983 High Rigidity Ball Bar Stand is designed to support a ball bar having 25.4 mm (one inch) diameter balls in various orientations during Coordinate Measuring Machine (CMM) performance evaluation. Ball bars with 25 mm 30 mm diameter balls will work equally well. However, using ball bars with ball diameters larger than 30 mm increases the instability of the ball bar during CMM measurements and is not recommended for use with this stand. Do not use ball bars with ball diameters less than 25 mm . They will not sit properly in the kinematic mounts.\n\nSRM 9983 High Rigidity Ball Bar Stand will work with ball bar lengths ranging from 200 mm to 1500 mm in the vertical, horizontal, and inclined orientations. For ball bars in the horizontal orientation, the stand is limited to supporting the ball bar from 115 mm ( 4.7 inches) to 1065 mm (42 inches) above the table surface.\n\nThe stand is compatible with NIST SRM 2083 screw together type ball bars which are available through the NIST SRM program office. Additionally, the stand can be used with proposed SRMs 2501-2509 calibrated ball bars which are currently under development. Other ball bars having the appropriate size ball may also be used. The calibrated ball bars are equipped with anti-roll collars situated at both ends of the ball bar which, when used with the High Rigidity Ball Bar Stand's capture collar, can help prevent the ball bar from falling from the stand in the event of an accidental collision.\n\nThe ANSI/ASME B89.1.12M Methods for Performance Evaluation of Coordinate Measuring Machines recommended ball bar orientations can be achieved with this stand. See Appendix A for a complete description of the ball bar positions recommended by the standard.\n\nCOMPONENTS\n\nThe stand should arrive in one case. Figure 1 contains the name and quantity of each item provided. It is recommended that the user inventory all items before proceeding to the assembly section of this manual.\n\n\nFigure 1. High Rigidity Ball Bar Stand components\n\\begin{tabular}{llr} \nNumber & Part & Quantity \\\\\n1 & Ball bar stand Case & 1 \\\\\n2 & Bases & 2 \\\\\n3 & Columns & 10 \\\\\n4 & Parallel cylinder top mount & 1 \\\\\n5 & Three ball top mount & 1 \\\\\n6 & Three ball ring mount & 1 \\\\\n7 & Capture collar & 1 \\\\\n8 & M10 socket head cap screw & 2 \\\\\n9 & M10 socket head set screw & 11 \\\\\n10 & M5 hex key & 1 \\\\\n11 & M8 ball driver & 1\n\\end{tabular}",
+        "page_idx": 7
+    },
+    {
+        "text": "ASSEMBLY\n\nThe NIST SRM 9983 High Rigidity Ball Bar Stand can be assembled to support a ball bar in various orientations at various heights above the CMM table. To assemble the stand, remove the bases from the stand case. The bases can be easily removed by inserting a M10 bolt into the center tapped hole. Using the bolt as a handle, gently pull the base from the case.\n\nCaution:\n(1) The bases have extremely strong magnets mounted in them. Subsequently, they can clamp down on magnetic surfaces with sufficient force to cause injury.\n(2) Keep the bases away from magnetically sensitive items such as computer diskettes.\n\nHorizontal Orientation\n\nThe ball bar can be mounted in the horizontal position, as shown in Figure 2, by selecting the columns or combination of columns that best approximate the desired height. The minimum height is formed by attaching the top mount directly to the base, resulting in the height of the ball center at approximately 115 mm above the table surface. (Appendix B provides a list of the heights of these components.) For all higher horizontal orientations various column combinations will allow the ball bar to be positioned within 25 mm (one inch) of the desired location, up to a maximum height of 1065 mm .\n\n\nFigure 2. Stand assembled in the horizontal support position",
+        "page_idx": 8
+    },
+    {
+        "text": "For assemblies requiring more than one column, first attach the longest column required to the base by using a M10 set screw. Make sure the set screw is fully engaged into the column center hole as shown in Figure 3. It is only necessary to hand tighten the components together. See Figures 4 and 5.\n\n\nFigure 3. Inserting a set screw into the support column\n\n\nFigure 4. Attaching the base to a column\n\nFinally attach the three ball and parallel cylinder top mounts by aligning the through hole of the parallel cylinder top mount over the tapped center hole in the erect assembly. Insert an M10 socket head cap screw (Figure 6). Using the 8 mm ball driver, securely fasten the top mount to the column\n\n\nFigure 5. Assembling a combination of columns\nassembly. Check to be sure the columns are securely attached together and to the base. The two stands should be separated by a distance that allows one ball of the ball bar to be located in the 3 ball top mount while the other ball is in the middle of the parallel cylinder top mount, centered over the magnet. If the ball is not within a few millimeters of this position, remove the ball bar and reposition the stand. Note: be sure that the parallel cylinders are aligned parallel to the ball bar axis as shown in Figure 2.\n\n\nFigure 6. Inserting M10 bolt into parallel cylinder top mount",
+        "page_idx": 9
+    },
+    {
+        "text": "INCLINED ORIENTATION\n\nFor ball bars in the inclined orientation it is common to have the low ball at the lowest possible position above the CMM table, see Figure 7. The low ball is at the lowest possible position when the three ball top mount is attached directly to one of the bases as shown in Figure 7. Again, this height corresponds to having the center of the low ball at approximately 115 mm above the CMM table. Figure 8 illustrates the relationship between the angle of inclination, ball bar length (center-to-center distance between the balls) and column height (or difference between column height if the low ball is supported on a column).\n\n\n\nFigure 7. Stand assembled in the inclined support position\n\ndifference between high\nand low columns\n\nFigure 8 Determining the appropriate length of the columns for a desired incline angle and low ball height, (top) stand assembled with a ball at the lowest possible position in the work zone; (bottom) stand assembled with the low ball at a desired height above the CMM table.",
+        "page_idx": 10
+    },
+    {
+        "text": "Table II\nTables I and II show numerically the appropriate length of the support columns for positioning the ball bar at approximately 30 and 45 degrees. Note: It is important that the three ball top mount be used on the low ball in the inclined orientation. Furthermore, position the three ball top mount as shown in Figure 9 (In the correct orientation, the low ball of the ball bar is pushing primarily against one ball of the top mount; this will support a greater load than if it pushes between two of the top mount balls.).\n\n\nFigure 9. Positioning the three ball mount with respect to the ball bar\n\nFor ball bars with anti-roll collars, the capture collar can be attached over the bar and into the two holes in the parallel cylinder top mount, as shown in Figure 7. This will help prevent the ball bar from falling in case of accident.\n\nTable I Determining the Appropriate Support Column Length to Approximate a 30 Degree Incline\n\n\\begin{tabular}{|l|l|l|}\nLength of ball bar (mm) & Incline angle & Support column length (mm) \\\\\n  300 & $26^{\\circ}$ & 150 \\\\\n  400 & $27^{\\circ}$ & 200 \\\\\n  500 & $27^{\\circ}$ & 250 \\\\\n  600 & $28^{\\circ}$ & 300 \\\\\n  700 & $28^{\\circ}$ & 350 \\\\\n  800 & $28^{\\circ}$ & 400 \\\\\n  900 & $29^{\\circ}$ & 450 \\\\\n  1000 & $29^{\\circ}$ & 500 \\\\\n  1100 & $29^{\\circ}$ & 550 \\\\\n  1200 & $29^{\\circ}$ & 600 \\\\\n  1300 & $29^{\\circ}$ & 650 \\\\\n  1400 & $29^{\\circ}$ & 700 \\\\\n  1500 & $29^{\\circ}$ & 750 \\\\\n \n\\end{tabular}\n\nDetermining the Appropriate Support Column Length to Approximate a 45 Degree Incline\n\n\\begin{tabular}{|c|c|c|}\n  Length of ball bar (mm) & Incline angle & Support column length (mm) \\\\\n  300 & $50^{\\circ}$ & 250 \\\\\n  400 & $44^{\\circ}$ & 300 \\\\\n  500 & $41^{\\circ}$ & 350 \\\\\n  600 & $46^{\\circ}$ & 450 \\\\\n  700 & $43^{\\circ}$ & 500 \\\\\n  800 & $47^{\\circ}$ & 600 \\\\\n  900 & $44^{\\circ}$ & 650 \\\\\n  1000 & $47^{\\circ}$ & 750 \\\\\n  1100 & $45^{\\circ}$ & 800 \\\\\n  1200 & $44^{\\circ}$ & 850 \\\\\n  1300 & $46^{\\circ}$ & 950 \\\\\n  1400 & $44^{\\circ}$ & 1000 \\\\\n  1500 & $46^{\\circ}$ & 1100 \\\\\n \n\\end{tabular}\n\nVERTICAL ORIENTATION\n\nSRM 9983 ball bar stand is designed to support a ball bar in the vertical orientation, see Figure 10. The set of columns selected for this orientation should be equal to the length of the ball bar. That is, if a 500 mm ball bar is used, the support columns should total 500 mm in length. For nonstandard ball bar lengths which are not equal to any combination of columns, e.g. English length ball bars, the three ball ring mount can be adjusted to accommodate them.\n\n\nFigure 10. Stand assembled in the vertical support position",
+        "page_idx": 11
+    },
+    {
+        "text": "Assemble the desired columns to the base, starting with the longest column segment first. Hand tighten this assembly firmly. Place the assembled structure on a flat surface in an erect position. Remove the three ring mount from the stand case. Orient the center hole in the ring mount over the column making sure the three ball mount is situated toward the top of the column (refer to Figure 10). Slide the ring mount over the erect assembly. If the ring mount does not easily slide over the column, remove the ring mount and check to ensure that the ratchet handle is disengaged. The ring mount should rest upon the base. Attach the parallel cylinder top mount to the column assembly. Align the top mount and ring mount such that the parallel cylinders located on the vertical face of the top mount are directly above the three ball ring mount. Secure both the top mount (using the ball driver) and the ring mount (using the ratchet lever -- note only a small amount of force on the ratchet lever is needed to secure the ring mount to the columns.)\n\nFor nonstandard ball bar lengths the height of the ring mount can be adjusted. In this case the ring mount will not rest upon the base.\n\nHolding the ball bar with both hands, gently place one ball of the ball bar into the three ball ring mount and the remaining ball into the parallel cylinder mount. The ball bar should be positioned vertically. If it is angled significantly to either side, remove the ball bar, reposition the ring mount and replace the ball bar as described above.\n\nIf a ball bar with anti roll collars is used, insert the capture collar into the two holes located on the vertical surface of the top mount as seen in Figure 10.\n\nATTACHING THE STAND TO THE TABLE\n\nOnce the ball bar stand has been assembled, place it at the desired location on the CMM table. The magnets mounted in the bottom of each base provide holding force on\nmagnetic surfaces, e.g., steel tables. The ball bar stand can be used on nonmagnetic surfaces. In this case, the stand can rest under its own weight. It is recommended that the user toe clamp the stand to nonmagnetic surfaces, when the probing forces are large ( $\\geq 50$ grams) or when the stand height is large ( $\\geq 700 \\mathrm{~mm}$ ). The bases are robust and can be used as clamping surfaces if necessary. Additionally, there are threaded holes in the bottom of each base. If your CMM has threaded inserts at the correct spacing, these holes can be used to secure the bases directly to the table.\n\nTROUBLE SHOOTING\n\nThe following section describes possible solutions to problems that may arise while using the ball bar stand resulting in unrepeatable ball bar measurements.\n(a) Make sure the mating surfaces of columns are not burred or dirty.\n(b) Make sure the magnets and feet located on the bottom of each base are free from debri.\n(c) Make sure the magnetic seats on the top mounts and ring mount where the ball bar seats are clean and free from debri.\n(d) Check to ensure the balls of the ball bar are resting properly in the mounts and the balls are not contacting the magnet. The ball should be between 25 and 30 mm in diameter\n(e) Clamp the stands directly to the CMM table to avoid stand rocking.",
+        "page_idx": 12
+    },
+    {
+        "text": "APPENDIX A\n\n\nFigure 11. Recommended ball bar positions for CMMs with nearly cubic work zones",
+        "page_idx": 13
+    },
+    {
+        "text": "16\n\n\n29\n\n\n31\n\n32\n\n33\n\n\n35\nFigure 12. Recommended ball bar position for CMMs with two long axes and one short axis",
+        "page_idx": 14
+    },
+    {
+        "text": "1\n\n\n2\n\n\n3\n\n\n4\n\n\n5\n\n\n6\n\n\n7\n\n\n12\n\n\n8\n\n\n13\n\n\n18\n\n\n14\n\n19\n20\n\n\n15\n\n\n\n23\n\n\n24\n25\n\n\n27\n\n\n29\n\n\n16\n\n\n9\n\n\n10\n\n\n11\n\n\n28\n\n\n30\n\nFigure 13. Recommended ball bar positions for CMMs with a single long axis",
+        "page_idx": 15
+    },
+    {
+        "text": "APPENDIX B\n\n\nFigure 13. Approximate height of ball bar stand components",
+        "page_idx": 16
+    },
+    {
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "text": "",
+        "page_idx": 19
+    }
+]

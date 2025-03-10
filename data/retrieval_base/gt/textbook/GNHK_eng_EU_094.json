@@ -1,0 +1,6 @@
+[
+    {
+        "text": "DATE PAGE Cyclic Redundancy check (CRC) - This is the data integrity cheeking perform redundancy mostly between the storage Device + RAM( Random Access on Memory). Q. what would you type in at a command %NA% to view the IP seeking for the computer that you are sitting at? AP IpConfig0/all Q. what command would you type in a command prompt to view the IP address of the remote computer? AP 1 nbtstat %NA% - a %NA% <Remote computer Name> 2 ping %NA% <Remote Host Name> Q. What is the w for class B? AP (128.0.0.0) to (191.0.0.0). Q. What is the Net ID of an IP address of 18.9.25.3 with subnet mark of 255.0.0.0? AP %math% 18.0.0.0. Q. what is CIDR( Classless Inter Domain Routing)? AP Its a method for allocating IP addressing + Routing IP %NA% By the help of CIDR it is become possible to create many No. of Network addresses according to the requirement on every class of IP. value at",
+        "page_idx": 0
+    }
+]

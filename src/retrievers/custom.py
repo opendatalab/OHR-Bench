@@ -12,7 +12,7 @@ from langchain.schema.embeddings import Embeddings
 from src.retrievers.json_reader import PCJSONReader
 
 def construct_retriever(docs_directory, embed_model=None, chunk_size=128, chunk_overlap=0, similarity_top_k=2):
-    documents = SimpleDirectoryReader(docs_directory, file_extractor={".json": PCJSONReader()}).load_data(num_workers=8)
+    documents = SimpleDirectoryReader(docs_directory, file_extractor={".json": PCJSONReader()}, recursive=True).load_data(num_workers=8)
     node_parser = SimpleNodeParser.from_defaults(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
     nodes = node_parser.get_nodes_from_documents(documents, show_progress=True, num_workers=8)
     
@@ -123,7 +123,7 @@ class CustomHybridRetriever(ABC):
         return retrievers
 
     def construct_index_for_subdir_pair(self, subdir_path, embed_model):
-        documents = SimpleDirectoryReader(subdir_path, file_extractor={".json": PCJSONReader()}).load_data()
+        documents = SimpleDirectoryReader(subdir_path, file_extractor={".json": PCJSONReader()}, recursive=True).load_data()
         node_parser = SimpleNodeParser.from_defaults(chunk_size=self.chunk_size, chunk_overlap=self.chunk_overlap)
         nodes = node_parser.get_nodes_from_documents(documents, show_progress=True)
         
@@ -181,16 +181,18 @@ class CustomPageRetriever(ABC):
             subdir_path = os.path.join(docs_directory, subdir)
             if os.path.isdir(subdir_path):
                 is_subdir_present = True
-                documents = SimpleDirectoryReader(subdir_path, file_extractor={".json": PCJSONReader()}).load_data(num_workers=8)
+                documents = SimpleDirectoryReader(subdir_path, file_extractor={".json": PCJSONReader()}, recursive=True).load_data(num_workers=8)
                 documents_by_subdir[subdir] = documents
         if not is_subdir_present:
-            documents = SimpleDirectoryReader(docs_directory, file_extractor={".json": PCJSONReader()}).load_data(num_workers=8)
+            documents = SimpleDirectoryReader(docs_directory, file_extractor={".json": PCJSONReader()}, recursive=True).load_data(num_workers=8)
             documents_by_subdir['default'] = documents
         return documents_by_subdir
 
     def search_docs(self, query: dict):
         doc_name = query.get("doc_name")
         evidence_page_no = query.get("evidence_page_no")
+        if not isinstance(evidence_page_no, list):
+            evidence_page_no = [evidence_page_no]
         subdir = doc_name.split('/')[0]
         documents = self.documents.get(subdir, self.documents.get('default'))
 
@@ -207,7 +209,7 @@ class CustomPageRetriever(ABC):
                 "file_name": doc.metadata.get("file_name", "").replace(".json", "")
             }
             for doc in documents
-            if get_doc_name(doc.metadata) == doc_name and doc.metadata.get("page_idx") == evidence_page_no
+            if get_doc_name(doc.metadata) == doc_name and doc.metadata.get("page_idx") in evidence_page_no
         ]
 
         return results

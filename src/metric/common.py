@@ -180,6 +180,17 @@ def f1_zh(prediction, ground_truth, normalize_fn):
     return f1
 
 
+def has_chn_character(s):
+    """chn"""
+    import unicodedata
+    for char in s:
+        try:
+            if 'CJK' in unicodedata.name(char):
+                return True
+        except ValueError:
+            continue
+    return False
+
 @catch_all_exceptions
 def exact_match_score(prediction, ground_truth):
     return 1 if normalize_answer(prediction) == normalize_answer(ground_truth) else 0
@@ -211,6 +222,10 @@ def f1_score(prediction, ground_truth):
 
     prediction_tokens = normalized_prediction.split()
     ground_truth_tokens = normalized_ground_truth.split()
+    if has_chn_character(prediction) or has_chn_character(ground_truth):
+        prediction_tokens = jieba.lcut(normalized_prediction)
+        ground_truth_tokens = jieba.lcut(normalized_ground_truth)
+
     common = Counter(prediction_tokens) & Counter(ground_truth_tokens)
     num_same = sum(common.values())
     if num_same == 0:

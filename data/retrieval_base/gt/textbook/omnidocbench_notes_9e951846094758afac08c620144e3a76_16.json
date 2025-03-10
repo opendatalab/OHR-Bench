@@ -1,0 +1,6 @@
+[
+    {
+        "text": "7. 如图，梯形ABCD中： AB//CD . 若 AB=1. $CD=2,AC=6,S_{\\Delta AOB}=1,\\text{则}AO=\\text{\\_\\_\\_\\_}$ $ S_{梯形 ABCD } $ = ____ .\n\n解： $ \\because $ AB//CD\n$ \\therefore \\triangle AOB\\sim \\triangle COD $\n即 $ \\frac{AO}{CO} =\\frac{AB}{CD} $ $ \\because $ AB=1. CD=2. AC=6\n$ \\therefore \\frac{AO}{CO} =\\frac{1}{2} \\Rightarrow $ CO=2AO\n又 $ \\because $ AC=AO+CO =3AO $ \\Rightarrow $ 3AO=6. AO=2\n又 $ \\because \\frac{S_{\\triangle AOB} }{S_{\\triangle COD} } =(\\frac{AB}{CD} )^{2} =(\\frac{1}{2} )^{2}=\\frac{1}{4}=\\frac{1}{S_{\\triangle COD} } $\n$$\n\\therefore S_{\\triangle COD} =4\n$$\n$ \\because S_{\\triangle AOB} $与 $ S_{\\triangle BOC} $ (不同底，同高)\n且底之比为 OA:OC = 1 : 2\n$ \\therefore S_{\\triangle AOB} :S_{\\triangle BOC}=1:2 $ $ \\because S_{\\triangle AOB} =1 $\n$ \\therefore S_{\\triangle BOC} =2 $同理 $ S_{\\triangle AOD } $与 $ S_{\\triangle COD } $ (不同底，同高)\n且底之比为 OA:OC=1:2 $ \\therefore S_{\\triangle AOD} :S_{\\triangle COD}=1:2 $",
+        "page_idx": 0
+    }
+]

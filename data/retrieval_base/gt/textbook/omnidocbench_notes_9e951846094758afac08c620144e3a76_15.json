@@ -1,0 +1,6 @@
+[
+    {
+        "text": "记住这个公式你就可以口算!\n\n海伦公式： $ S_{\\Delta}=\\sqrt{p ( p-a ) ( p-b ) ( p-c )} $\n\n(P为: $ P=\\frac{a+b+c}{2} $ , a. b. c为三角形三边长)\n\n那么：\n\n$\\begin{aligned}S_{\\Delta DQC}&=\\sqrt{\\frac{11}{2}\\cdot(\\frac{11}{2}-2)\\cdot(\\frac{11}{2}-4)\\cdot(\\frac{11}{2}-5)}\\\\&=\\sqrt{\\frac{11}{2}\\cdot\\frac{7}{2}\\cdot\\frac{3}{2}\\cdot\\frac{1}{2}}\\\\&=\\frac{\\sqrt{231}}{4}\\end{aligned}$\n\n$ P=\\frac{2+4+5}{2} =\\frac{11}{2} $\n\n又 $ \\because S_{\\Delta D Q C}=\\frac{1} {2} \\times C Q \\times D P $ $ =\\frac{1}{2}×2×DP=DP $\n\n$ \\therefore DP=\\frac{\\sqrt{231} }{4} $根据 $ \\textcircled{1} $ $ S_{四边形ABCD} =9×高=9DP=\\frac{9\\sqrt{231} }{4} $根据 $ \\frac{S_{\\Delta M A D}} {S_{\\Delta M A D}+\\frac{9 \\sqrt{2 3 1}} {4}}=\\frac{1 6} {2 5} $\n\n$ \\Rightarrow S_{\\Delta M A D}=4 \\sqrt{2 3 1} $ (end ! )",
+        "page_idx": 0
+    }
+]

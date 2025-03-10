@@ -1,0 +1,22 @@
+[
+    {
+        "page_idx": 0,
+        "text": "# \n# \n8. Projection Drawing is the science and art of producing drawings which shall represent completely all facts of position, form and magnitude of all geometrical quantities in space. \n9. The Methods employed in Projection Drawing, are those of  Orthographic Projection,” which is the basis of the science of Descriptive Geometry. \n# \n10. In Projection Drawing, all objects are represented by their projections upon fixed planes of reference. Hence an understanding of the geometrical meaning of the term “ projection\" is essential. \n11. From Geometry we have: “ The projection of a point upon a straight line is the foot of the perpendicular dropped from the point upon the line. \nThus: \nurc"
+    },
+    {
+        "page_idx": 1,
+        "text": "Let $\\overset{\\vartriangle}{\\boldsymbol{A}}\\boldsymbol{B}$ be any straight line, and $P$ any point not in the line. Let $P\\phi$ be perpendicular to $A B$ .Then $\\phi$ is the projection of $P$ upon the line $_{A B}$ \n12. Similarly : ‘ The projection of a point upon a plane is the foot of a perpendicular from the point to the plane. \nThus: \niqure \n$P$ is a point in space, and $P\\phi$ a perpendicular from $P$ upon the plane $A B C D$ $\\phi$ is the projection, then, of $P$ upon the plane. \n13. The projection of any line. or surface, or solid, may be found by fnding the projections of all of its points. For lines and surfaces are but successions of points, and solids are bounded by surfaces. \n# \n14. Now consider two mathematical planes of indefnite extent, intersecting each other at right angles, fixed in positioi, one horizontal and the other vertical. Let the following figure represent limited portions of these two planes :"
+    },
+    {
+        "page_idx": 2,
+        "text": "$$\n\\vec{r}:g u r e\\textbf{\\em3}.\n$$\nLet the vertical plane be denoted by I and the horizontalplaneby $H,$ and their line of intersection by $G L$ \n15. Now imagine a point to be situated in space 111 one of the angles of these two planes, as shown 111 Fig. 4: \niqure 4"
+    },
+    {
+        "page_idx": 3,
+        "text": "21. When the two planes have been made to coincide, they, with the projections of the point, may be brought into the plane of the paper, and will appear as shown in Fig. 5 : \n\nThe line of intersection $G L$ , is placed horizontal on the drawing, with the projections upon the vertical plane above, and those upon the horizontal plane below it。 \n# \nTERMS EMPLOYED. \n22. For convenience and brevity the following terms are used: \n(1) The two fixed planes are called \" the planes of   \nprojection,' or \" the co-ordinate planes, Or‘the   \nplancs of reference.\" (2) The vertical plane of projection is called simply   \nthe vertical plane,' or commonly, \" V.\"\" (3) The other is called \\*\" the horizontal plane, or   \nsimply, “ H.\"\" (4) The line of intersection of the two planes is called the ground line,' or briefly, Or hriefv  \\*\" GI. \"\""
+    },
+    {
+        "page_idx": 4,
+        "text": "99. A single projection is sufficient here. From it. Fig. 6, get the ‘ co-ordinates '’ Oa and ab of point $\\textit{b}$ and $O d$ and $d c$ of any point $C$ of the edge FH. \nConstruct the isometric drawing of the horizontal piece OS. Then along $O G$ on the drawing,lay off $O\\alpha$ from $O$ ,and from $\\alpha$ downward lay off ab. This gives the lines $F b$ and $\\it{b R}$ , as $F$ and $\\boldsymbol{R}$ are on the isometric line and can be laid off at once. \nNext, to get the inclination of the other piece, lay off $O d$ from $O$ along $O G$ :and upward lay off $d C$ Then there are two points determined and FH can be drawn. \n$\\mathcal{R}\\mathcal{K}$ is parallel to FH on the object, hence will be on the drawing. \nThe widths of the pieces are shown as usual. In this way the complete isometric drawing is.readily constructed. \n100. By a similar use of co-ordinates obtained from the ordinary projections, the isometric drawing of anything may be constructed. \n# \n101. Shade lines are placed in isometric drawings"
+    }
+]

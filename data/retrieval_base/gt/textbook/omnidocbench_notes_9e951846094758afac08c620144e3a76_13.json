@@ -1,0 +1,6 @@
+[
+    {
+        "text": "$ \\because $ AD//BC\n$ \\therefore \\triangle MAD\\sim \\triangle MBC $\n$ \\therefore $相似比为 $ \\frac{AD}{BC} =\\frac{8}{10} =\\frac{4}{5} =\\frac{MA}{MB} =\\frac{MD}{MC} $\n$ \\therefore \\frac{\\triangle MAD周长}{\\triangle MBC周长} =\\frac{4}{5} $ $ \\textcircled{1} $\n$ \\because \\frac{MA}{MB} =\\frac{4}{5} $\n$ \\therefore \\frac{MA}{MA+4} =\\frac{4}{5} $\n$ \\therefore $ MA=16\n$ \\frac{MD}{MC} =\\frac{4}{5} $\n$ \\therefore \\frac{MD}{MD+5} =\\frac{4}{5} $\n$ \\therefore $ MD=20\n$ \\therefore \\triangle MAD $周长=MA+AD+MD=16+8+20 =44 $ \\textcircled{2} $\n$ \\therefore $由 $ \\textcircled{1} $ $ \\textcircled{2} $可知. $ \\triangle MBC $周长=55",
+        "page_idx": 0
+    }
+]

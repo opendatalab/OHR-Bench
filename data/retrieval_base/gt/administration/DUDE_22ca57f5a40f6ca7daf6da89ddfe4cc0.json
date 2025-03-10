@@ -1,0 +1,42 @@
+[
+    {
+        "text": "The Open Education Foundation\n\nCSC 223 Visual Basic 2\n\nProblem Solving and an Introduction to Programming Concepts\nPart 2: Systems Concepts and the Problem Space\nPrevious Next\n\n2.0.\n\nWhen we look at Systems, the question must be asked: What is there about all Systems, which basic components can be found in all Systems, that can be assigned to what we can describe as a Generic System? This Generic System Model contains the Components and Parameters which can be found to exist in all Systems. There are only Three possibilities:\n1. Things - or what we will refer to as Nodes. They are physical entities which can be found at a specific Location in the Real World.\n2. Connections - or what we will refer to as Relationships. They are Abstract Concepts which may or may not have a specific Location in the Real World.\n3. Organization - or what we will refer to as Networks. They are both Abstract and Physical Concepts which may or may not have a specific location in the Real Work\nfig. 1 -",
+        "page_idx": 0
+    },
+    {
+        "text": "When we view the specific Nodes and Relationships together (globally), we can see a representation of the Organization or Network. Whenever analyzing any Phenomena or Problem we should first attempt to isolate the most Fundamental Components or Parameters of the particular System(s) under investigation. Such a procedure enables us to be sure that we have not accidentally ignored something which would be important in our Analysis. For example, when given an assignment to develop a Computer Program for a certain Game, we should use this Methodology to First establish what the Problem Space of this System would be. I will define the Problem Space as a representation of all of the fundamental Components or Parameters which can be used to describe the Phenomena under investigation. The Problem Space in essentially a Model of the Game System's Physical and Abstract Parameters, together with specific rules governing the playing of the",
+        "page_idx": 1
+    },
+    {
+        "text": "game.\nfig. 2 -",
+        "page_idx": 2
+    },
+    {
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "text": "Note that Problem Spaces are Nested according to their relationships to each other in a Hierarchical fashion. As we will see when we discuss Programming concepts, Problem Space Rules follow those found in OOA (Object Oriented Analysis) and used in OOP (Object Oriented Programming) and in OOD (Object Oriented Design).\n\n2.1.0. - Systems Analysis and Scientific Methodology -\n\nA special type of Thinking or Analysis was used to construct the previous Models; Science deals with the study of such Physical Phenomena, and it is important to understand Scientific Methodology if one is to successfully study Systems. Models are used by Scientists and others, in order to construct representations of Reality which then allow us to study the Phenomena Under investigation. The Scientific Method encompasses four basic Models of Reality:\nfig 3 -",
+        "page_idx": 4
+    },
+    {
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "text": "Note that there has to be feedback between all levels of this Model, often only after working on subsequent models will one find that a previous Model has to be modified. The ideal situation is to create an association of Models which allow for the least overlap between Categories as is possible, the reason for this should be obvious.\n\nSome of the problems when conducting Systems Analysis, especially when dealing with Scientific Methodology, are the problems of Measurement and Specification of the Model:\n1. Measurement - Uses quantitative methods to determine the quantities of each Component of the System. It involves strictly, the use of Scientific qualities.\n2. Specification - Specifies the Parameters under which the System Operates. Specification uses both Qualitative and Quantitative Methods. It involves both Artistic and Scientific Qualities.\nfig. 4 -",
+        "page_idx": 7
+    },
+    {
+        "text": "2.1.1. - Utilization of System Resources -\n\nThe investigator is always interested is System Resource Utilization, just as management of the Business Organization is interested in Resource Utilization within their Organization. Three Methods are used to describe Resource Utilization in a System:\nfig 5 -\n\n\nThe program designer always has to be aware of the Resource Utilization Problem, since he does not have unlimited time and resources to use for his project.",
+        "page_idx": 8
+    },
+    {
+        "text": "Return to Home Page\n\nSee Copyright Notice\nFor Comments and Questions contact the Webmaster: garthus@lilrc.org",
+        "page_idx": 9
+    }
+]

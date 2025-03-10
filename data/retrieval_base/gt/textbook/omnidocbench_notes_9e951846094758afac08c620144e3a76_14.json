@@ -1,0 +1,6 @@
+[
+    {
+        "text": "延伸拓展求 $ S_{\\triangle MAD}=? $\n\n$ \\because \\frac{S_{\\triangle MAD} }{S_{\\triangle MBC} } =(相似比)^{2} =(\\frac{4}{5} )^{2} =\\frac{16}{25} $\n即 $ \\frac{S_{\\triangle MAD} }{S_{\\triangle MAD}+S_{四边形ABCD} } =\\frac{16}{25} $\nBut. $ S_{四边形ABCD}=? $\n有的同学可能会说四边形ABCD为梯形 $ =\\frac{1}{2} (AD+BC)\\times 高=\\frac{1}{2} \\times (8+10)\\times 高 $ $=9\\cdot高$ $ \\textcircled{1} $\n但是. 高是多少呢？这就是问题所在!看我的 ! 如图：作 DQ //AB.交BC于Q\n$ \\because $ AD//BQ. AB//DQ $ \\therefore $四边形BQDA为平行四边形.\n$ \\therefore $ BQ=AD=8 $ \\therefore $ CQ=2. DQ=BA=4.\n在 $ \\triangle DQC $中 $\\begin{cases}QD=4\\\\QC=2\\\\CD=5\\end{cases}$那面积呢？",
+        "page_idx": 0
+    }
+]

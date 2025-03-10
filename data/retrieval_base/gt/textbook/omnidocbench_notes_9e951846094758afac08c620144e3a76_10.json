@@ -1,0 +1,6 @@
+[
+    {
+        "text": "本题\n$ \\because $ DE//BC\n$ \\therefore\\angle1=\\angle 2  ~ ~ ~ ~  又\\because \\angle A= \\angle A $\n$ \\therefore\\Delta A D E \\sim\\Delta A B C $\n$ \\therefore\\frac{A D} {A B}=\\frac{2} {3} $为相似比\n$ \\frac{S_{\\Delta A D E}} {S_{\\Delta A B C}}=( \\frac{2} {3} )^{2}=\\frac{4} {9} $\n设 $ S_{\\Delta A D E}=4 x. \\quad\\quad\\quad\\quad S_{\\Delta A B C}=9 x $\n$ \\therefore S_{四边形D B C E}=9 x-4 x=5 x $\n$ \\therefore\\frac{S_{\\Delta A D E}} {S_{DBCE}}=\\frac{4 x} {5 x}=\\frac{4} {5} $\n\n5. 如图，在 $ \\Delta A B C $中. 点DE分别在AB和AC上， DE//BC , M为BC边上一点(不与点B. (重合). 连AM交DE于点N. 则\n\nA. $ \\frac{A D} {A N}=\\frac{A N} {A E} $ B. $ \\frac{B D} {M N}=\\frac{M N} {C E} $ C. $ \\frac{D N} {B M}=\\frac{NE}{ME} $ D. $ \\frac{D N} {M C}=\\frac{N E} {B N} $",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,6 @@
+[
+    {
+        "text": "对于该题，知识点为：平行线分线段成比例和相似。就记住：“对应”，“交叉可互换”\n\nA选项： $ \\frac{AD}{AN} =\\frac{AB}{AM} $\nB. 选项： $ \\frac{BD}{AD} =\\frac{MN}{AN} =\\frac{CE}{AE} $\nC. 正确\nD 选项: $ \\frac{DN}{BM} =\\frac{AN}{AM} =\\frac{NE}{MC} . $\n\n纯自创\n\n已知： DE//BC AN=2NM\n\n求 $ \\frac{S_{\\triangle DEM} }{S_{\\triangle ABC} } =？ $\n\n看到 面积 平行 比例 $ \\Rightarrow $直接锁定：相似， $ (相似比)^2=面积比\\Rightarrow $这就是对知识点的敏感度\n\n干掉它！",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,6 @@
+[
+    {
+        "text": "67 JUN 25 Multiway Tries (contd.) implementaion of search (x), delete(x) is the same as for tries run time: %math% (time to find appropriate child)) each node has up to %math% look for child at a node the char of the striy that is being procurred time to find child dep on size of alphabet references to children store children as arr of size %math% each node O(1) time to find child for n nodes, we need %math% space store list of of children @ each hode %math% time to find child (improve using MTF) for n nodes, need O(n) space store a dictionary @ each node each node only appears keys in dictionay =child label once in a list values in dict= child address %math% or better to find child (specifically) the list stored by its parent) for, n nods, need O(n) space insert(x), %math% %math% the %math% %math% @ %math% %math% %math% %math% %math% %math% %math% %math% %math% %math% %math%",
+        "page_idx": 0
+    }
+]

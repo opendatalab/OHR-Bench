@@ -1,0 +1,6 @@
+[
+    {
+        "text": "HMM Training 1 Initialization (IS1, IS2, ..., ISN) A. Samples (5 ~ 12) %math% divide into N initial states B. Calculate Avg lenght of each state (evenly) (lo1, lo2 ... loN) C. Calculate initial transition prob Poi = %math% (Po1, Po2, ... PoN) d. Calculate u , %math% for each state %math% ... %math% / %math% %NA% %math% 2 Loops (1, 2, ... t) x A. for each point (near boundary) , compare %math% %math% decide if to move X to another state vs B. Calculate Avglength of each state (lt1, lt2 ... ltN) C. Calculate transition prob (Pt1, Pt2, ... PtN) D. Calculate %math% %math% for each state %math% ... %math% / %math% -, %math% if boundaries don't change %math% converge! * Note that each state must have %math% 1 point! %math%",
+        "page_idx": 0
+    }
+]

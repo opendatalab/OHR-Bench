@@ -1,0 +1,6 @@
+[
+    {
+        "text": "$ \\because $ DE//BC\n$ \\therefore \\bigtriangleup ADN \\sim \\bigtriangleup ABM $\n$ \\bigtriangleup ANE \\sim \\bigtriangleup AMC $\n$ \\therefore \\frac{AN}{AM} =\\frac{AD}{AB} =\\frac{DN}{BM} $\n$ \\frac{AN}{AM} =\\frac{AE}{AC} =\\frac{NE}{MC} . $\n又 $ \\because $ AN=2NM\n$ \\therefore \\frac{AN}{AM} =\\frac{2}{3} $\n故两组相似的相似比均为 $ \\frac{2}{3} $\n$ \\therefore \\frac{S_{\\Delta A D N}} {S_{\\Delta A B M}}=( \\frac{2} {3} )^{2}=\\frac{4} {9}; $ $ \\frac{S_{\\Delta A N E}} {S_{\\Delta A M C}}=( \\frac{2} {3} )^{2}=\\frac{4} {9} $\n设 $ S_{\\Delta ADN}=4k $ $ S_{\\Delta A N E}=4t $\n$ \\therefore S_{\\Delta ABM}=9k $ $ S_{\\Delta A M C}=9 t $\n$ \\therefore S_{\\Delta A B C}=S_{\\Delta A B M}+S_{\\Delta A M C}=9 k+9 t. $\n又 $ \\because S_{\\Delta D N M}=\\frac{1} {2} S_{\\Delta A D N} $ (等高不等底)\n$ S_{\\Delta M N E}=\\frac{1} {2} S_{\\Delta A N E} $同理\n$ \\therefore S_{\\Delta D N M}=2 K; $ $ S_{\\Delta M N E}=2 t $\n$ \\therefore S_{\\Delta M D E}=S_{\\Delta D M N}+S_{\\Delta M N E}=2 k+2 t $\n$ \\therefore \\frac{S_{\\Delta D M E}} {S_{\\Delta A B C}}=\\frac{2 k+2 t} {9 k+9 t}=\\frac{2 ( k+t )} {9 ( k+t )}=\\frac{2} {9}. $\n\n嗨不？\n\n6. 在四边形ABCD中， AD//BC ，AB与CD不平行根据图中数据，若BA、CD延长后交于点m，则 $ \\bigtriangleup MBC $的周长为____.",
+        "page_idx": 0
+    }
+]
