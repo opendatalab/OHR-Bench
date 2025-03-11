@@ -218,7 +218,8 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
     </tbody>
 </table>
 
-We evaluate the suitability of current OCR solutions for real-world RAG applications by conducting comprehensive experiments with our OHR-Bench.
+We evaluate the suitability of current OCR solutions for real-world RAG applications by conducting comprehensive experiments with our OHR-Bench. We report the generalized LCS or F1 of five types of evidence sources, including plain text (TXT), table (TAB), formula (FOR), chart (CHA), and reading order (RO).
+
 We derive conclusions as follows:
 
 - VLMs for OCR achieve the best overall performance. Employing Qwen2.5-VL-72B achieves the best performance across all OCR solutions.
