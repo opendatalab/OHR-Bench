@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[\[📜 arXiv\]](https://arxiv.org/abs/2412.02592v1) | [\[Dataset (🤗Hugging Face)\]](https://huggingface.co/datasets/opendatalab/OHR-Bench) | [\[Dataset (OpenDataLab)\]](https://opendatalab.com/OpenDataLab/OHR-Bench)
+[\[📜 arXiv\]](https://arxiv.org/abs/2412.02592v2) | [\[Dataset (🤗Hugging Face)\]](https://huggingface.co/datasets/opendatalab/OHR-Bench) | [\[Dataset (OpenDataLab)\]](https://opendatalab.com/OpenDataLab/OHR-Bench)
 
 </div>
 
@@ -215,6 +215,28 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>3.1</td>
             <td>29.6</td>
         </tr>
+        <tr>
+            <td>olmOCR</td>
+            <td>0.21</td>
+            <td>62.3</td>
+            <td>57.0</td>
+            <td>55.0</td>
+            <td>24.8</td>
+            <td>5.0</td>
+            <td>50.9</td>
+            <td>44.8</td>
+            <td>40.5</td>
+            <td>30.4</td>
+            <td>19.0</td>
+            <td>8.4</td>
+            <td>36.0</td>
+            <td>40.6</td>
+            <td>30.3</td>
+            <td>23.7</td>
+            <td>12.8</td>
+            <td>7.1</td>
+            <td>29.7</td>
+        </tr>
     </tbody>
 </table>
 
@@ -228,7 +250,7 @@ We derive conclusions as follows:
 # Getting Started
 ## Installation
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu121
 ```
 
 ## Dataset preparation
