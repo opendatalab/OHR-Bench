@@ -55,24 +55,24 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>Ground Truth</td>
             <td>-</td>
-            <td>81.2</td>
-            <td>69.6</td>
+            <td>80.2</td>
+            <td>69.5</td>
             <td>74.8</td>
             <td>70.3</td>
             <td>9.8</td>
-            <td>70.0</td>
-            <td>49.4</td>
+            <td>69.5</td>
+            <td>49.3</td>
             <td>46.0</td>
             <td>34.0</td>
             <td>47.0</td>
             <td>28.2</td>
-            <td>43.9</td>
-            <td>45.0</td>
+            <td>43.8</td>
+            <td>44.9</td>
             <td>34.6</td>
             <td>28.0</td>
             <td>32.9</td>
             <td>18.7</td>
-            <td>36.1</td>
+            <td>36.0</td>
         </tr>
         <tr>
             <td colspan="20"><i>Pipeline-based OCR</i></td>
@@ -80,35 +80,35 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>MinerU</td>
             <td>0.24</td>
-            <td>67.7</td>
-            <td>48.5</td>
+            <td>66.8</td>
+            <td>48.4</td>
             <td>51.1</td>
             <td>16.5</td>
             <td><b>5.9</b></td>
-            <td>50.1</td>
-            <td><b>45.9</b></td>
+            <td>49.8</td>
+            <td><b>45.7</b></td>
             <td>39.3</td>
             <td>28.6</td>
             <td>9.7</td>
             <td><b>29.5</b></td>
-            <td><u>36.7</u></td>
+            <td><u>36.6</u></td>
             <td><b>41.4</b></td>
             <td>28.5</td>
             <td>23.0</td>
             <td>9.3</td>
             <td><b>17.8</b></td>
-            <td><u>30.0</u></td>
+            <td><u>29.9</u></td>
         </tr>
         <tr>
             <td>Marker</td>
             <td>0.28</td>
-            <td><b>75.2</b></td>
-            <td><u>57.8</u></td>
+            <td><b>74.1</b></td>
+            <td><u>57.7</u></td>
             <td><u>55.4</u></td>
             <td>19.7</td>
             <td><b>5.9</b></td>
-            <td>56.6</td>
-            <td><u>44.5</u></td>
+            <td>56.3</td>
+            <td><u>44.4</u></td>
             <td>37.8</td>
             <td>27.8</td>
             <td>10.9</td>
@@ -119,7 +119,7 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>22.3</td>
             <td>10.0</td>
             <td><u>16.2</u></td>
-            <td>29.5</td>
+            <td>29.4</td>
         </tr>
         <tr>
             <td colspan="20"><i>End-to-end OCR</i></td>
@@ -127,12 +127,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>GOT</td>
             <td>0.27</td>
-            <td>62.1</td>
+            <td>61.3</td>
             <td>41.0</td>
             <td>48.7</td>
             <td>17.4</td>
             <td>3.7</td>
-            <td>45.4</td>
+            <td>45.1</td>
             <td>37.5</td>
             <td>28.5</td>
             <td>24.1</td>
@@ -144,18 +144,18 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>20.1</td>
             <td>8.2</td>
             <td>5.3</td>
-            <td>24.6</td>
+            <td>24.5</td>
         </tr>
         <tr>
             <td>Nougat</td>
             <td>0.34</td>
-            <td>59.1</td>
+            <td>58.3</td>
             <td>32.7</td>
             <td>44.2</td>
             <td>11.3</td>
             <td>4.4</td>
-            <td>40.9</td>
-            <td>36.7</td>
+            <td>40.6</td>
+            <td>36.6</td>
             <td>22.9</td>
             <td>22.9</td>
             <td>6.4</td>
@@ -174,13 +174,13 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>Qwen2.5-VL-72B</td>
             <td>0.18</td>
-            <td><u>74.6</u></td>
-            <td><b>59.8</b></td>
+            <td><u>73.7</u></td>
+            <td><b>59.7</b></td>
             <td><b>59.7</b></td>
             <td><u>38.2</u></td>
             <td>5.3</td>
-            <td><b>59.2</b></td>
-            <td>44.4</td>
+            <td><b>58.8</b></td>
+            <td>44.3</td>
             <td><b>42.1</b></td>
             <td><b>31.8</b></td>
             <td><b>27.0</b></td>
@@ -196,13 +196,13 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>InternVL2.5-78B</td>
             <td>0.28</td>
-            <td>68.2</td>
-            <td>57.7</td>
+            <td>67.3</td>
+            <td>57.6</td>
             <td>55.3</td>
             <td><b>45.1</b></td>
             <td>2.7</td>
-            <td><b>55.8</b></td>
-            <td>41.8</td>
+            <td><b>55.5</b></td>
+            <td>41.7</td>
             <td><u>41.8</u></td>
             <td><u>29.0</u></td>
             <td><b>33.6</b></td>
@@ -218,12 +218,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>olmOCR</td>
             <td>0.21</td>
-            <td>62.3</td>
+            <td>61.5</td>
             <td>57.0</td>
             <td>55.0</td>
             <td>24.8</td>
             <td>5.0</td>
-            <td>50.9</td>
+            <td>50.6</td>
             <td>44.8</td>
             <td>40.5</td>
             <td>30.4</td>
@@ -235,7 +235,7 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>23.7</td>
             <td>12.8</td>
             <td>7.1</td>
-            <td>29.7</td>
+            <td>29.6</td>
         </tr>
     </tbody>
 </table>
