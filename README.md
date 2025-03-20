@@ -354,6 +354,8 @@ bash shell/end2end.sh gt bge-m3 qwen2_7b
 bash shell/end2end.sh semantic_noise_MinerU_severe bge-m3 qwen2_7b
 ```
 
+You can then use `exp_scripts/exp_show.ipynb` to view the results grouped by `domain` or `evidence_source`.
+
 # Acknowledgement
 The evaluation framework is based on [CRUD](https://github.com/IAAR-Shanghai/CRUD_RAG), thanks so much for this brilliant project.
 
