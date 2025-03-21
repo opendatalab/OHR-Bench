@@ -27,7 +27,9 @@ class RetrievalTask(BaseTask):
         hits_results = []
         doc_name = "/".join(data_point["doc_name"].split("/")[1:])
         page_idx = data_point["evidence_page_no"]
-        ret_context = [r["text"] for r in data_point["retrieval_results"] if r["file_name"] == doc_name and r["page_idx"] == page_idx]
+        if not isinstance(page_idx, list):
+            page_idx = [page_idx]
+        ret_context = [r["text"] for r in data_point["retrieval_results"] if r["file_name"] == doc_name and r["page_idx"] in page_idx]
         gt_context = data_point["evidence_context"]
         if isinstance(gt_context, list):
             gt_context = "\n".join(gt_context)
