@@ -55,12 +55,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>Ground Truth</td>
             <td>-</td>
-            <td>80.2</td>
-            <td>69.5</td>
-            <td>74.8</td>
+            <td>81.6</td>
+            <td>69.8</td>
+            <td>75.2</td>
             <td>70.3</td>
             <td>9.8</td>
-            <td>69.5</td>
+            <td>70.4</td>
             <td>49.3</td>
             <td>46.0</td>
             <td>34.0</td>
@@ -80,12 +80,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>MinerU</td>
             <td>0.24</td>
-            <td>66.8</td>
-            <td>48.4</td>
-            <td>51.1</td>
+            <td>68.1</td>
+            <td>48.6</td>
+            <td>51.3</td>
             <td>16.5</td>
             <td><b>5.9</b></td>
-            <td>49.8</td>
+            <td>50.5</td>
             <td><b>45.7</b></td>
             <td>39.3</td>
             <td>28.6</td>
@@ -102,12 +102,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>Marker</td>
             <td>0.28</td>
-            <td><b>74.1</b></td>
-            <td><u>57.7</u></td>
-            <td><u>55.4</u></td>
-            <td>19.7</td>
+            <td><b>75.5</b></td>
+            <td>58.2</td>
+            <td>55.5</td>
+            <td>20.0</td>
             <td><b>5.9</b></td>
-            <td>56.3</td>
+            <td><u>57.0</u></td>
             <td><u>44.4</u></td>
             <td>37.8</td>
             <td>27.8</td>
@@ -127,12 +127,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>GOT</td>
             <td>0.27</td>
-            <td>61.3</td>
-            <td>41.0</td>
-            <td>48.7</td>
+            <td>62.5</td>
+            <td>41.1</td>
+            <td>49.0</td>
             <td>17.4</td>
             <td>3.7</td>
-            <td>45.1</td>
+            <td>45.8</td>
             <td>37.5</td>
             <td>28.5</td>
             <td>24.1</td>
@@ -149,12 +149,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>Nougat</td>
             <td>0.34</td>
-            <td>58.3</td>
-            <td>32.7</td>
-            <td>44.2</td>
+            <td>59.5</td>
+            <td>32.8</td>
+            <td>44.3</td>
             <td>11.3</td>
             <td>4.4</td>
-            <td>40.6</td>
+            <td>41.2</td>
             <td>36.6</td>
             <td>22.9</td>
             <td>22.9</td>
@@ -174,12 +174,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>Qwen2.5-VL-72B</td>
             <td>0.18</td>
-            <td><u>73.7</u></td>
-            <td><b>59.7</b></td>
-            <td><b>59.7</b></td>
+            <td><u>75.1</u></td>
+            <td><b>60.0</b></td>
+            <td><b>60.0</b></td>
             <td><u>38.2</u></td>
             <td>5.3</td>
-            <td><b>58.8</b></td>
+            <td><b>59.6</b></td>
             <td>44.3</td>
             <td><b>42.1</b></td>
             <td><b>31.8</b></td>
@@ -196,12 +196,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>InternVL2.5-78B</td>
             <td>0.28</td>
-            <td>67.3</td>
-            <td>57.6</td>
-            <td>55.3</td>
+            <td>68.6</td>
+            <td>57.9</td>
+            <td><u>55.6</u></td>
             <td><b>45.1</b></td>
             <td>2.7</td>
-            <td><b>55.5</b></td>
+            <td>56.2</td>
             <td>41.7</td>
             <td><u>41.8</u></td>
             <td><u>29.0</u></td>
@@ -218,12 +218,12 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>olmOCR</td>
             <td>0.21</td>
-            <td>61.5</td>
-            <td>57.0</td>
-            <td>55.0</td>
+            <td>72.5</td>
+            <td><u>58.4</u></td>
+            <td>55.4</td>
             <td>24.8</td>
             <td>5.0</td>
-            <td>50.6</td>
+            <td>56.6</td>
             <td>44.8</td>
             <td>40.5</td>
             <td>30.4</td>
