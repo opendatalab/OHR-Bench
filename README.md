@@ -12,6 +12,11 @@
 
 This repository contains the official code of **OHR-Bench**, a benchmark designed to evaluate the cascading impact of OCR on RAG.
 
+# News
+- 2025.6.30: Updating the results of MongkeyOCR, 
+Nanonets-OCR-s and Azure Document Intelligence.
+- 2025.6.26: OHR-Bench has been accepted by ICCV 2025!
+
 # Overview
 - **PDF, gt structured data and Q&A datasets: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `pdfs.zip`, `data/retrieval_base/gt`, `data/qas_v2.json`**. It includes 8500+ unstructured PDF pages from 7 domains, including Textbook, Law, Finance, Newspaper, Manual, Academic and Administration and 8498 Q&A datasets sourced from 5 key components for OCR in document parsing, including plain text, table, formula, chart and reading order. Each PDF page is equipped with a human-verified ground truth structured data.
 - **Perturbed data with OCR errors: [[🤗 Hugging Face](https://huggingface.co/datasets/opendatalab/OHR-Bench)] `formatting_noise_[mild/moderate/severe]` and `semantic_noise_[GOT/MinerU/Qwen2.5-VL-72B]_[mild/moderate/severe]`**. In order to conduct in-depth analysis of the OCR's impact on RAG, OHR-Bench identifies *Semantic Noise* and *Formatting Noise* and introduce them with mild, moderate and severe perturbation based on real-world OCR errors.
@@ -78,7 +83,7 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td colspan="20"><i>Pipeline-based OCR</i></td>
         </tr>
         <tr>
-            <td>MinerU</td>
+            <td>MinerU-0.9.3</td>
             <td>0.24</td>
             <td>68.1</td>
             <td>48.6</td>
@@ -100,19 +105,19 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td><u>29.9</u></td>
         </tr>
         <tr>
-            <td>Marker</td>
+            <td>Marker-1.2.3</td>
             <td>0.28</td>
-            <td><b>75.5</b></td>
+            <td><u>75.5</u></td>
             <td>58.2</td>
             <td>55.5</td>
             <td>20.0</td>
             <td><b>5.9</b></td>
-            <td><u>57.0</u></td>
+            <td>57.0</td>
             <td><u>44.4</u></td>
             <td>37.8</td>
             <td>27.8</td>
             <td>10.9</td>
-            <td><u>26.2</u></td>
+            <td>26.2</td>
             <td>35.9</td>
             <td>40.1</td>
             <td>28.1</td>
@@ -120,6 +125,28 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>10.0</td>
             <td><u>16.2</u></td>
             <td>29.4</td>
+        </tr>
+        <tr>
+            <td>Azure</td>
+            <td>-</td>
+            <td><b>78.0</b></td>
+            <td>59.4</td>
+            <td>55.2</td>
+            <td><b>45.2</b></td>
+            <td><u>5.8</u></td>
+            <td><b>60.6</b></td>
+            <td>41.0</td>
+            <td>37.1</td>
+            <td>27.1</td>
+            <td>22.9</td>
+            <td><u>27.3</u></td>
+            <td>35.0</td>
+            <td>37.5</td>
+            <td>28.1</td>
+            <td>22.6</td>
+            <td>15.1</td>
+            <td><u>17.5</u></td>
+            <td>28.9</td>
         </tr>
         <tr>
             <td colspan="20"><i>End-to-end OCR</i></td>
@@ -174,16 +201,16 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
         <tr>
             <td>Qwen2.5-VL-72B</td>
             <td>0.18</td>
-            <td><u>75.1</u></td>
+            <td>75.1</td>
             <td><b>60.0</b></td>
             <td><b>60.0</b></td>
-            <td><u>38.2</u></td>
+            <td>38.2</td>
             <td>5.3</td>
-            <td><b>59.6</b></td>
+            <td><u>59.6</u></td>
             <td>44.3</td>
             <td><b>42.1</b></td>
             <td><b>31.8</b></td>
-            <td><b>27.0</b></td>
+            <td><u>27.0</u></td>
             <td>11.6</td>
             <td><b>37.5</b></td>
             <td><u>40.6</u></td>
@@ -198,8 +225,8 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>0.28</td>
             <td>68.6</td>
             <td>57.9</td>
-            <td><u>55.6</u></td>
-            <td><b>45.1</b></td>
+            <td>55.6</td>
+            <td><u>45.1</u></td>
             <td>2.7</td>
             <td>56.2</td>
             <td>41.7</td>
@@ -216,10 +243,10 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>29.6</td>
         </tr>
         <tr>
-            <td>olmOCR</td>
+            <td>olmOCR-7B-0225-preview</td>
             <td>0.21</td>
             <td>72.5</td>
-            <td><u>58.4</u></td>
+            <td>58.4</td>
             <td>55.4</td>
             <td>24.8</td>
             <td>5.0</td>
@@ -237,8 +264,54 @@ This repository contains the official code of **OHR-Bench**, a benchmark designe
             <td>7.1</td>
             <td>29.6</td>
         </tr>
+        <tr>
+            <td>MonkeyOCR</td>
+            <td>-</td>
+            <td>74.6</td>
+            <td>56.5</td>
+            <td>55.5</td>
+            <td>16.5</td>
+            <td>5.7</td>
+            <td>55.9</td>
+            <td>40.3</td>
+            <td>36.5</td>
+            <td>25.9</td>
+            <td>7.9</td>
+            <td>25.0</td>
+            <td>32.8</td>
+            <td>35.4</td>
+            <td>27.3</td>
+            <td>20.7</td>
+            <td>6.5</td>
+            <td>16.3</td>
+            <td>26.7</td>
+        </tr>
+        <tr>
+            <td>Nanonets-OCR-s</td>
+            <td>-</td>
+            <td>71.8</td>
+            <td><u>59.8</u></td>
+            <td><u>57.4</u></td>
+            <td>43.7</td>
+            <td>4.4</td>
+            <td>58.3</td>
+            <td>38.2</td>
+            <td>36.3</td>
+            <td>28.0</td>
+            <td>25.7</td>
+            <td>7.8</td>
+            <td>32.4</td>
+            <td>34.9</td>
+            <td>27.6</td>
+            <td>22.7</td>
+            <td>18.6</td>
+            <td>7.1</td>
+            <td>27.2</td>
+        </tr>
     </tbody>
 </table>
+
+Notes: The subpar performance of Azure Document Intelligence may be related to the use of Llama3.1-8B as the generator. We are currently investigating this issue and plan to update the results using more advanced LLMs as generators.
 
 We evaluate the suitability of current OCR solutions for real-world RAG applications by conducting comprehensive experiments with our OHR-Bench. We report the generalized LCS or F1 of five types of evidence sources, including plain text (TXT), table (TAB), formula (FOR), chart (CHA), and reading order (RO).
 
