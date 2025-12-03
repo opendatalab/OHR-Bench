@@ -13,8 +13,8 @@
 This repository contains the official code of **OHR-Bench**, a benchmark designed to evaluate the cascading impact of OCR on RAG.
 
 # News
-- 2025.6.30: Updating the results of MongkeyOCR, 
-Nanonets-OCR-s and Azure Document Intelligence.
+- 2025.12.3: 🤗🤗 We have released our latest work [TRivia](https://github.com/opendatalab/TRivia) and [TRivia-3B](https://huggingface.co/opendatalab/TRivia-3B), a self-supervised training framework for table recognition, and an advanced table recognition VLM trained on Qwen2.5-VL-3B.
+- 2025.6.30: Updating the results of MongkeyOCR, Nanonets-OCR-s and Azure Document Intelligence.
 - 2025.6.26: OHR-Bench has been accepted by ICCV 2025!
 
 # Overview
